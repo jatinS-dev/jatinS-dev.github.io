@@ -1,14 +1,12 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - jatinS-dev
 
 repo_description_lines_max: 2
 
 github_repos:
-  - alshedivat/al-folio
-  - jekyll/jekyll
-  - twbs/bootstrap
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - mathjax/MathJax
-  - jpswalsh/academicons
+  - jatinS-dev/VisionLanguageAI
+  - jatinS-dev/Text-Summarization-by-Transfer-Learning
+  - jatinS-dev/soc21_guided-tour
+  - jatinS-dev/DSA-Resources
+  - jatinS-dev/HiringVerse
+

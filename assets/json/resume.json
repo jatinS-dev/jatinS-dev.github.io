@@ -1,200 +1,428 @@
 {
   "basics": {
-    "name": "Albert Einstein",
-    "label": "Scientist",
+    "name": "Jatin Avinash Salve",
+    "label": "Computer Science Graduate Student & ML Engineer",
     "image": "",
-    "email": "albert@einstein.de",
-    "phone": "(912) 123-4567",
-    "url": "https://alshedivat.github.io/al-folio/",
-    "summary": "A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time",
+    "email": "jatin.salve@ufl.edu",
+    "phone": "+1 (352)-757-9671",
+    "url": "https://jatins-dev.github.io/",
+    "summary": "Graduate student in Computer Science at University of Florida with expertise in Machine Learning, Natural Language Processing, and Multimodal AI. Published researcher with experience in healthcare AI applications and real-time systems development.",
     "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
+      "address": "Gainesville",
+      "postalCode": "32611",
+      "city": "Gainesville",
       "countryCode": "US",
-      "region": "California"
+      "region": "Florida"
     },
     "profiles": [
       {
-        "network": "Twitter",
-        "username": "AlbertEinstein",
-        "url": "https://twitter.com/AlbertEinstein"
+        "network": "LinkedIn",
+        "username": "jatinsalve",
+        "url": "https://linkedin.com/in/jatinsalve"
+      },
+      {
+        "network": "GitHub",
+        "username": "jatinS-dev",
+        "url": "https://github.com/jatinS-dev"
       }
     ]
   },
   "work": [
     {
-      "name": "Institute for Advanced Study, Princeton University",
-      "position": "Professor of Theoretical Physics",
-      "url": "https://example.com",
-      "startDate": "1933-01-01",
-      "endDate": "1955-01-01",
-      "summary": "Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.",
-      "highlights": ["Relativity"]
+      "name": "ICICI Bank",
+      "position": "Technology Analyst",
+      "url": "https://www.icicibank.com/",
+      "startDate": "2023-05-01",
+      "endDate": "2024-07-01",
+      "summary": "Led migration to Adobe's personalization platform across multiple banking applications, impacting 10M+ customers. Built ML-driven recommendation engines and improved system efficiency by 7.5%.",
+      "highlights": [
+        "Led migration to Adobe's personalization platform across RIB, CIB, NLI, and iMobile, impacting 10M+ customers",
+        "Improved efficiency by 7.5% and reduced rendering latency by 1s through optimized data processing pipelines",
+        "Built ML-driven recommendation engines with logistic regression & real-time event processing using Apache Kafka",
+        "Deployed scalable solutions in Unix/Linux environments with 99.9% uptime and automated CI/CD pipelines",
+        "Mentored junior developers and conducted technical knowledge sharing sessions"
+      ]
+    },
+    {
+      "name": "AI-ML-NLP Lab, IIT Patna",
+      "position": "Research Assistant",
+      "url": "https://www.iitp.ac.in/",
+      "startDate": "2023-04-01",
+      "endDate": "2024-02-01",
+      "summary": "Developed EDI-Summ, a multimodal summarization architecture for clinical documents, achieving state-of-the-art performance and publishing at ACL 2024.",
+      "highlights": [
+        "Developed EDI-Summ, a multimodal summarization architecture with contextual + cross-attention",
+        "Achieved 0.81 factual recall and 3.51 clinical score, outperforming GPT-3.5 & GPT-4V",
+        "Enhanced BART pipelines with multimodal fusion for state-of-the-art healthcare summarization",
+        "Conducted experiments in Linux-based distributed research environments"
+      ]
+    },
+    {
+      "name": "Polytechnique de Montréal",
+      "position": "MITACS Globalink Research Intern",
+      "url": "https://www.polymtl.ca/",
+      "startDate": "2022-05-01",
+      "endDate": "2022-08-01",
+      "summary": "Built real-time decision support system for climate and water management, processing 20,000+ datasets across 30 cities and improving forecast accuracy by 25%.",
+      "highlights": [
+        "Built real-time decision support system with React.js, Node.js, and ML models",
+        "Processed 20,000+ climate & water datasets across 30 cities",
+        "Improved forecast accuracy by 25% and planning efficiency by 30%",
+        "Deployed on Linux servers with scalable backend services"
+      ]
+    },
+    {
+      "name": "JoomlaCMS",
+      "position": "Software Developer (OSPP & GSoC)",
+      "url": "https://www.joomla.org/",
+      "startDate": "2021-07-01",
+      "endDate": "2022-08-01",
+      "summary": "Developed customizable guided tour system with multi-language support, reducing onboarding drop-off by 20% and mentoring contributors in Google Summer of Code program.",
+      "highlights": [
+        "Developed customizable guided tour system with multi-language support & progress tracking",
+        "Reduced onboarding drop-off by 20%",
+        "Mentored contributors in selective Google Summer of Code program (0.2% acceptance rate)",
+        "Collaborated with global teams via Git, Agile workflows, and CI/CD pipelines"
+      ]
     }
   ],
   "volunteer": [
     {
-      "organization": "People's Climate March",
-      "location": "Zurich, Switzerland",
-      "position": "Lead Organizer",
-      "url": "https://example.com",
-      "startDate": "2014-04-01",
-      "endDate": "2015-07-01",
-      "summary": "Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.",
-      "highlights": ["Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march.", "Men of the year 2014 by Time magazine"]
+      "organization": "Open Source Community",
+      "location": "Remote",
+      "position": "Contributor & Mentor",
+      "url": "https://github.com/jatinS-dev",
+      "startDate": "2021-01-01",
+      "endDate": "2024-12-01",
+      "summary": "Active contributor to open-source projects including JoomlaCMS, PyTorch, and various healthcare AI projects. Mentor students in ML/AI and software development.",
+      "highlights": [
+        "Mentored 10+ junior developers and students in ML/AI and software development",
+        "Active contributor to JoomlaCMS, PyTorch, and various healthcare AI projects",
+        "Speaker at local tech meetups and AI/ML conferences",
+        "Teaching coding to underprivileged students"
+      ]
     }
   ],
   "education": [
     {
-      "institution": "University of Zurich, Zurich, Switzerland",
-      "location": "Zurich, Switzerland",
-      "url": "https://www.uzh.ch/",
-      "area": "Software Development",
-      "studyType": "PhD",
-      "startDate": "1905-01-01",
-      "endDate": "1905-01-01",
-      "score": "10",
-      "courses": ["Theory of Relativity"]
+      "institution": "University of Florida",
+      "location": "Gainesville, FL, USA",
+      "url": "https://www.ufl.edu/",
+      "area": "Computer Science",
+      "studyType": "Master of Science",
+      "startDate": "2024-08-01",
+      "endDate": "2026-05-01",
+      "score": "3.8/4.0",
+      "courses": [
+        "Large Language Models(LLMs)",
+        "Natural Language Processing(NLP)",
+        "Mathematics for Intelligent Systems"
+      ]
+    },
+    {
+      "institution": "Veermata Jijabai Technological Institute",
+      "location": "Mumbai, India",
+      "url": "https://vjti.ac.in/",
+      "area": "Electronics and Computer Engineering",
+      "studyType": "Bachelor of Technology",
+      "startDate": "2019-08-01",
+      "endDate": "2023-05-01",
+      "courses": [
+        "Data Structures",
+        "Algorithms",
+        "Database Systems",
+        "Software Engineering",
+        "Computer Networks",
+        "Operating Systems"
+      ]
     }
   ],
   "awards": [
     {
-      "title": "Nobel Prize in Physics",
-      "date": "1921-11-01",
-      "awarder": "Royal Swedish Academy of Sciences",
-      "url": "https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/",
-      "summary": "The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'"
+      "title": "ACL 2024 Publication",
+      "date": "2024-07-01",
+      "awarder": "Association for Computational Linguistics",
+      "url": "https://aclanthology.org/",
+      "summary": "Published 'From Sights to Insights: Towards Summarization of Multimodal Clinical Documents' at ACL 2024 - International Conference on Computational Linguistics"
+    },
+    {
+      "title": "University of Florida Graduate Research Fellowship",
+      "date": "2024-08-01",
+      "awarder": "University of Florida",
+      "url": "https://www.ufl.edu/",
+      "summary": "Graduate research fellowship for outstanding academic performance and research potential in Computer Science"
+    },
+    {
+      "title": "MITACS Globalink Research Internship",
+      "date": "2022-05-01",
+      "awarder": "MITACS Canada",
+      "url": "https://www.mitacs.ca/",
+      "summary": "Prestigious international research internship program for undergraduate students"
+    },
+    {
+      "title": "Google Summer of Code (GSoC) Participant",
+      "date": "2022-05-01",
+      "awarder": "Google",
+      "url": "https://summerofcode.withgoogle.com/",
+      "summary": "Selected participant in Google Summer of Code program with 0.2% acceptance rate"
     }
   ],
   "certificates": [
     {
-      "name": "Machine Learning",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-location-dot"
+      "name": "AWS Certified Cloud Practitioner",
+      "date": "2024-01-01",
+      "issuer": "Amazon Web Services",
+      "url": "https://aws.amazon.com/certification/",
+      "icon": "fa-brands fa-aws"
     },
     {
-      "name": "Quantum Computing",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-tag"
+      "name": "Google Cloud Professional Machine Learning Engineer",
+      "date": "2024-01-01",
+      "issuer": "Google Cloud",
+      "url": "https://cloud.google.com/certification/",
+      "icon": "fa-brands fa-google"
     },
     {
-      "name": "Quantum Information",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-envelope"
+      "name": "Deep Learning Specialization",
+      "date": "2023-01-01",
+      "issuer": "DeepLearning.AI",
+      "url": "https://www.deeplearning.ai/",
+      "icon": "fa-solid fa-brain"
     },
     {
-      "name": "Quantum Cryptography",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-hashtag"
+      "name": "Machine Learning with Python",
+      "date": "2023-01-01",
+      "issuer": "IBM",
+      "url": "https://www.ibm.com/",
+      "icon": "fa-solid fa-robot"
     },
     {
-      "name": "Quantum Communication",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-calendar"
+      "name": "Data Science Professional Certificate",
+      "date": "2023-01-01",
+      "issuer": "IBM",
+      "url": "https://www.ibm.com/",
+      "icon": "fa-solid fa-chart-line"
     },
     {
-      "name": "Quantum Teleportation",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-clipboard-check"
+      "name": "Oracle Certified Java Programmer",
+      "date": "2022-01-01",
+      "issuer": "Oracle",
+      "url": "https://www.oracle.com/",
+      "icon": "fa-brands fa-java"
     }
   ],
   "publications": [
     {
-      "name": "Zur Elektrody/namik bewegter Körper",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1905-06-30",
-      "url": "https://en.wikisource.org/wiki/Translation:On_the_Electrodynamics_of_Moving_Bodies",
-      "summary": "It concerned an interpretation of the Michelson–Morley experiment and the properties of light and time. Special relativity incorporates the principle that the speed of light is the same for all inertial observers regardless of the state of motion of the source."
+      "name": "From Sights to Insights: Towards Summarization of Multimodal Clinical Documents",
+      "publisher": "ACL 2024",
+      "releaseDate": "2024-07-01",
+      "url": "https://aclanthology.org/",
+      "summary": "Published at ACL 2024 - International Conference on Computational Linguistics. Developed state-of-the-art multimodal summarization architecture for clinical documents."
     },
     {
-      "name": "Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1905-03-18",
-      "url": "https://de.wikisource.org/wiki/Über_einen_die_Erzeugung_und_Verwandlung_des_Lichtes_betreffenden_heuristischen_Gesichtspunkt",
-      "summary": "In the second paper, he applied the quantum theory to light to explain the photoelectric effect. In particular, he used the idea of light quanta (photons) to explain experimental results, but stressed the importance of the experimental results. The importance of his work on the photoelectric effect earned him the Nobel Prize in Physics in 1921."
-    },
-    {
-      "name": "Die Grundlage der allgemeinen Relativitätstheorie",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1916-03-20",
-      "url": "https://de.wikisource.org/wiki/Die_Grundlage_der_allgemeinen_Relativitätstheorie",
-      "summary": "The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914)."
+      "name": "EDI-Summ: Enhanced Multimodal Summarization for Healthcare Applications",
+      "publisher": "EMNLP 2024",
+      "releaseDate": "2024-12-01",
+      "url": "https://2024.emnlp.org/",
+      "summary": "Under review at EMNLP 2024 - Conference on Empirical Methods in Natural Language Processing. Enhanced multimodal summarization system for healthcare applications."
     }
   ],
   "skills": [
     {
-      "name": "Physics",
-      "level": "Master",
-      "icon": "fa-solid fa-hashtag",
+      "name": "Programming Languages",
+      "level": "Expert",
+      "icon": "fa-solid fa-code",
       "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
+        "Python (Expert)",
+        "Java (Advanced)",
+        "JavaScript (Advanced)",
+        "C/C++ (Intermediate)",
+        "SQL (Advanced)",
+        "PHP (Intermediate)",
+        "R (Intermediate)"
+      ]
+    },
+    {
+      "name": "ML/AI Frameworks",
+      "level": "Expert",
+      "icon": "fa-solid fa-brain",
+      "keywords": [
+        "PyTorch",
+        "TensorFlow",
+        "Hugging Face Transformers",
+        "Scikit-learn",
+        "NumPy",
+        "Pandas",
+        "OpenCV",
+        "MediaPipe",
+        "Keras",
+        "XGBoost",
+        "LightGBM"
+      ]
+    },
+    {
+      "name": "Web Development",
+      "level": "Advanced",
+      "icon": "fa-solid fa-globe",
+      "keywords": [
+        "React.js",
+        "Node.js",
+        "Express.js",
+        "REST APIs",
+        "GraphQL",
+        "HTML5",
+        "CSS3",
+        "Bootstrap",
+        "jQuery",
+        "AJAX",
+        "WebSocket"
+      ]
+    },
+    {
+      "name": "Cloud & DevOps",
+      "level": "Advanced",
+      "icon": "fa-solid fa-cloud",
+      "keywords": [
+        "AWS (EC2, S3, Lambda, SageMaker, CloudFormation)",
+        "Docker",
+        "Kubernetes",
+        "Git",
+        "CI/CD",
+        "Linux/Unix",
+        "Jenkins",
+        "Terraform"
+      ]
+    },
+    {
+      "name": "Databases & Tools",
+      "level": "Advanced",
+      "icon": "fa-solid fa-database",
+      "keywords": [
+        "MongoDB",
+        "PostgreSQL",
+        "MySQL",
+        "Redis",
+        "Apache Kafka",
+        "Jupyter",
+        "Streamlit",
+        "Apache Spark",
+        "Elasticsearch"
       ]
     }
   ],
   "languages": [
     {
-      "language": "German",
-      "fluency": "Native speaker",
-      "icon": ""
-    },
-    {
       "language": "English",
       "fluency": "Fluent",
-      "icon": ""
+      "icon": "fa-solid fa-flag-usa"
+    },
+    {
+      "language": "Hindi",
+      "fluency": "Native speaker",
+      "icon": "fa-solid fa-flag"
+    },
+    {
+      "language": "Marathi",
+      "fluency": "Native speaker",
+      "icon": "fa-solid fa-flag"
     }
   ],
   "interests": [
     {
-      "name": "Physics",
-      "icon": "fa-solid fa-tag",
+      "name": "Machine Learning & AI",
+      "icon": "fa-solid fa-robot",
       "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
+        "Multimodal Learning",
+        "Deep Neural Networks",
+        "Transfer Learning",
+        "Real-time Inference",
+        "Model Optimization",
+        "Federated Learning",
+        "Computer Vision",
+        "Gesture Recognition",
+        "Healthcare AI"
       ]
-    }
-  ],
-  "references": [
-    {
-      "name": "Professor John Doe",
-      "icon": "fa-solid fa-laptop",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
     },
     {
-      "name": "Professor John Doe",
-      "icon": "fa-solid fa-thumbtack",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
+      "name": "Natural Language Processing",
+      "icon": "fa-solid fa-language",
+      "keywords": [
+        "Multimodal Summarization",
+        "Clinical NLP",
+        "Medical Text Processing",
+        "Large Language Models",
+        "Prompt Engineering",
+        "Few-shot Learning",
+        "Cross-lingual Processing",
+        "Machine Translation",
+        "NLG",
+        "NLU"
+      ]
+    },
+    {
+      "name": "Distributed Systems",
+      "icon": "fa-solid fa-server",
+      "keywords": [
+        "Scalable Backend Services",
+        "Real-time Processing",
+        "Event Streaming",
+        "Cloud Computing",
+        "Microservices Architecture",
+        "Containerization",
+        "Data Engineering",
+        "ETL Pipelines",
+        "Real-time Analytics"
+      ]
     }
   ],
   "projects": [
     {
-      "name": "Quantum Computing",
-      "summary": "Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.",
-      "highlights": ["Quantum Teleportation", "Quantum Cryptography"],
-      "startDate": "2018-01-01",
-      "endDate": "2018-01-01",
-      "url": "https://example.com"
+      "name": "EDI-Summ: Multimodal Clinical Document Summarization",
+      "summary": "Developed state-of-the-art multimodal summarization architecture with contextual + cross-attention mechanisms, achieving 0.81 factual recall and 3.51 clinical score, outperforming GPT-3.5 & GPT-4V",
+      "highlights": [
+        "Multimodal fusion architecture",
+        "Contextual and cross-attention mechanisms",
+        "Published at ACL 2024",
+        "Outperformed GPT-3.5 & GPT-4V"
+      ],
+      "startDate": "2023-04-01",
+      "endDate": "2024-02-01"
+    },
+    {
+      "name": "Gestural AI – Real-Time ASL Interpreter",
+      "summary": "Built real-time American Sign Language recognition system with 94% accuracy on 20,000+ videos & 166,000 images using Python, OpenCV, MediaPipe, and TensorFlow",
+      "highlights": [
+        "94% accuracy on 20,000+ videos",
+        "Real-time processing",
+        "Computer vision and gesture recognition",
+        "Deep learning implementation"
+      ],
+      "startDate": "2024-01-01",
+      "endDate": "2024-06-01"
+    },
+    {
+      "name": "Climate Decision Support System",
+      "summary": "Designed real-time data analysis platform processing 20,000+ climate & water datasets across 30 cities, improving forecast accuracy by 25% using React.js, Node.js, and ML models",
+      "highlights": [
+        "20,000+ datasets processed",
+        "30 cities coverage",
+        "25% accuracy improvement",
+        "Real-time data analysis"
+      ],
+      "startDate": "2022-05-01",
+      "endDate": "2022-08-01"
+    },
+    {
+      "name": "JoomlaCMS Guided Tour System",
+      "summary": "Developed modular onboarding framework with multi-language support integrated into JoomlaCMS core, reducing user drop-off by 20% and improving user experience",
+      "highlights": [
+        "20% reduction in user drop-off",
+        "Multi-language support",
+        "Modular architecture",
+        "GSoC and OSPP project"
+      ],
+      "startDate": "2021-07-01",
+      "endDate": "2022-08-01"
     }
   ]
 }

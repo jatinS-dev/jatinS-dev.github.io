@@ -1,80 +1,113 @@
 ---
 layout: page
-title: project 4
-description: another without an image
-img:
-importance: 3
-category: fun
+title: "Verified Medical NLP – RDF-Grounded Jamba RAG"
+description: "RDF-grounded medical question answering with deterministic hallucination checks and Jamba MoE reasoning"
+img: assets/img/11.jpg
+importance: 0
+category: Research
+giscus_comments: true
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+## 🩺 Overview
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+This project delivers a **hallucination-mitigated medical language model pipeline** that combines RDF knowledge graphs, retrieval-augmented generation (RAG), and the **Jamba-1.5 Mixture-of-Experts** architecture. The workflow grounds every response in verifiable biomedical evidence, producing fact-checked answers for clinical question answering.
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+I led design and implementation of the **evaluation and verification subsystem**, translating RDF query outputs into structured, human-readable summaries and evidence objects that drive fully auditable AI decisions.
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
+## 🚀 Key Features
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+| Component | Description |
+|-----------|-------------|
+| RDF-Grounded RAG | Retrieves factual triples (disease–treatment–drug, etc.) from Bio2RDF, UMLS, and Wikidata Medical before generation. |
+| Jamba Integration | Leverages Jamba-1.5 MoE for efficient long-context reasoning that blends retrieved biomedical evidence with prompt context. |
+| Hallucination Evaluation Module | Implements deterministic checkers for factual consistency, retrieval coverage, and hallucination rate (H). |
+| RDF Result Summarizer | Converts `rdflib.query.Result` objects into natural summaries or structured DocSource payloads. |
+| Zero-Hallucination Pipeline | Benchmarks RDF-grounded vs. vanilla LLM outputs on PubMedQA, MedQA (USMLE), and Med-HALT datasets. |
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+## 🧩 Core Components I Built
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+### 1. `result_to_summary()`
 
-{% raw %}
+- Handles all SPARQL query forms (SELECT, ASK, CONSTRUCT, DESCRIBE).
+- Produces concise, human-readable narratives summarizing RDF answers.
+- Automatically infers medical entities (disease, drug, gene, symptom) from triples.
+- Fully deterministic — no downstream ML/LLM inference required.
 
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
+**Sample output**
+
+```
+🩺 Found 3 result(s).
+Variables: disease, treatment
+
+🔍 Showing first 3 result(s):
+  1. disease: Diabetes, treatment: Insulin
+  2. disease: Hypertension, treatment: Atenolol
+  3. disease: Influenza, treatment: Oseltamivir
+
+🧠 Extracted Medical Entities:
+  - Disease: Diabetes, Hypertension, Influenza
+  - Drug: Atenolol, Insulin, Oseltamivir
 ```
 
-{% endraw %}
+### 2. `result_to_sources()`
+
+- Transforms RDF query results into `DocSource` objects for provenance tracking.
+- Supports SELECT, ASK, CONSTRUCT, and DESCRIBE outputs with schema-specific adapters.
+
+**Example**
+
+Input rows:
+
+| uri | label | abstract |
+|-----|-------|----------|
+| http://bio2rdf.org/drugbank:DB001 | Aspirin | Used to treat pain and fever. |
+
+Output:
+
+```python
+[
+  DocSource(
+      id="drugbank:DB001",
+      title="Aspirin",
+      content="Used to treat pain and fever.",
+      source_type="SPARQL_SELECT"
+  )
+]
+```
+
+## 📊 Benchmarking
+
+**Datasets**
+
+- PubMedQA (labeled biomedical QA)
+- MedQA (USMLE clinical reasoning)
+- Med-HALT (hallucination stress test)
+
+**Metrics**
+
+| Metric | Purpose |
+|--------|---------|
+| Hallucination Rate (H) | Share of unsupported or contradictory statements |
+| Factual Precision / Recall | Alignment of claims with RDF ground truth |
+| ROUGE-L / F1 | Overlap with reference clinical answers |
+| Retrieval Precision@k | Accuracy of top-k triple retrieval |
+| Latency | Response time per query |
+
+**Results**
+
+| Model | RDF Grounding | Hallucination ↓ | F1 ↑ | Latency (s) ↓ |
+|-------|---------------|-----------------|------|---------------|
+| LLaMA-3-8B-Instruct | ✗ | 0.45 | 0.61 | 1.2 |
+| RAG-Text | ✗ | 0.36 | 0.68 | 2.3 |
+| RDF-RAG | ✓ | 0.28 | 0.75 | 2.9 |
+| Jamba + RDF | ✓ | **0.22** | **0.79** | 3.1 |
+
+→ **36–50% reduction in hallucination rate** while maintaining high factual accuracy.
+
+## 🧰 Stack
+
+- **Languages**: Python, SPARQL, RDFLib
+- **LLMs & Frameworks**: Jamba-1.5, LLaMA-3-8B, FAISS-powered RAG
+- **Libraries**: `rdflib`, `datasets`, `jsonlines`, `pandas`, `matplotlib`
+- **Datasets**: PubMedQA, MedQA, Med-HALT
+- **Infrastructure**: UF HiPerGator HPC (CUDA 12.1, Apptainer containers)

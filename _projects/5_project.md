@@ -1,80 +1,95 @@
 ---
 layout: page
-title: project 5
-description: a project with a background image
-img: assets/img/1.jpg
-importance: 3
-category: fun
+title: "Clinical Summarization with ProphetNet"
+description: Fine-tuning ProphetNet for improved clinical dialogue summarization
+img: assets/img/prophetnet_project.jpg
+importance: 5
+category: Research
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+## Overview
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+Developed an advanced **clinical dialogue summarization system** by fine-tuning ProphetNet on the MeSum dataset. This project focused on improving ROUGE scores and factual accuracy for clinical conversation summarization, with optimized GPU-based training pipelines in Linux clusters.
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+## Research Objectives
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
+- **Improve ROUGE Scores**: Enhanced automatic evaluation metrics for summarization quality
+- **Factual Accuracy**: Maintained medical accuracy in generated summaries
+- **Clinical Relevance**: Ensured summaries are clinically meaningful and actionable
+- **Performance Optimization**: Efficient training and inference on distributed systems
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+## Technical Implementation
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+### Model Architecture
+- **ProphetNet Base Model**: Leveraged pre-trained transformer architecture
+- **Clinical Fine-tuning**: Specialized training on medical dialogue datasets
+- **Multi-task Learning**: Combined summarization with clinical entity recognition
+- **Attention Mechanisms**: Enhanced focus on clinically relevant information
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+### Training Pipeline
+- **GPU Optimization**: Efficient utilization of Linux cluster resources
+- **Distributed Training**: Multi-GPU training for faster convergence
+- **Data Preprocessing**: Specialized tokenization for medical terminology
+- **Evaluation Metrics**: Clinical-specific assessment criteria
 
-{% raw %}
+## Key Features
 
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
+### Clinical Focus
+- **Medical Terminology**: Proper handling of clinical vocabulary and abbreviations
+- **Context Preservation**: Maintains important medical context in summaries
+- **Temporal Information**: Preserves chronological order of clinical events
+- **Entity Recognition**: Identifies and preserves key medical entities
 
-{% endraw %}
+### Performance Optimizations
+- **Batch Processing**: Efficient handling of large clinical datasets
+- **Memory Management**: Optimized for large model training
+- **Parallel Processing**: Multi-threaded data loading and preprocessing
+- **Model Compression**: Techniques for deployment efficiency
+
+## Technologies & Tools
+
+- **Python**: Core implementation and data processing
+- **PyTorch**: Deep learning framework and model training
+- **Transformers**: Hugging Face library for ProphetNet implementation
+- **NLP Libraries**: spaCy, NLTK for text processing
+- **Linux Clusters**: High-performance computing environment
+- **CUDA**: GPU acceleration for training and inference
+
+## Dataset & Evaluation
+
+### MeSum Dataset
+- **Clinical Dialogues**: Real-world medical conversation data
+- **Diverse Scenarios**: Various clinical specialties and conditions
+- **Expert Annotations**: Professionally annotated summaries for training
+- **Quality Metrics**: Multiple evaluation criteria for clinical relevance
+
+### Evaluation Metrics
+- **ROUGE Scores**: Standard automatic evaluation metrics
+- **Clinical Accuracy**: Medical expert evaluation of factual correctness
+- **Readability**: Assessment of summary clarity and coherence
+- **Completeness**: Coverage of important clinical information
+
+## Research Impact
+
+### Clinical Applications
+- **Medical Documentation**: Automated generation of clinical summaries
+- **Decision Support**: Quick access to patient information for healthcare providers
+- **Quality Assurance**: Consistent and comprehensive clinical documentation
+- **Time Efficiency**: Reduced time for manual documentation tasks
+
+### Technical Contributions
+- **Model Adaptation**: Demonstrated effective fine-tuning for clinical domains
+- **Evaluation Framework**: Established metrics for clinical summarization quality
+- **Performance Optimization**: Efficient training strategies for large models
+- **Reproducibility**: Open methodology for clinical NLP research
+
+## Future Directions
+
+- **Multi-modal Integration**: Incorporation of visual medical data
+- **Real-time Processing**: Live summarization during clinical consultations
+- **Specialty Adaptation**: Domain-specific models for different medical specialties
+- **Integration**: EHR system integration for seamless clinical workflows
+
+## Research Environment
+
+Conducted in collaboration with clinical NLP researchers, utilizing state-of-the-art computing infrastructure. The project involved extensive experimentation with different model architectures and training strategies, contributing to the broader field of clinical natural language processing.

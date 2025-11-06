@@ -2,96 +2,192 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
-    - name: Date of Birth
-      value: 14th March 1879
+      value: Jatin Avinash Salve
+    - name: Email
+      value: jatin.salve@ufl.edu
+    - name: Location
+      value: Gainesville, FL, USA
+    - name: Phone
+      value: +1 (352)-757-9671
+    - name: LinkedIn
+      value: linkedin.com/in/jatinsalve
+    - name: GitHub
+      value: github.com/jatinS-dev
     - name: Languages
-      value: English, German
+      value: English (Fluent), Hindi (Native), Marathi (Native), French (Basic)
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
+    - title: Master of Science - Computer Science
+      institution: University of Florida, Gainesville, FL, USA
+      year: Aug 2024 – May 2026 (Expected)
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
+        - Focus on Machine Learning, NLP, and Distributed Systems
+        - Research in Multimodal AI and Healthcare Applications
+        - GPA: 3.8/4.0
+        - Relevant Coursework: Advanced Machine Learning, Natural Language Processing, Distributed Systems, Computer Vision, Data Mining, Algorithms
+    - title: Bachelor of Technology - Computer Science and Engineering
+      institution: Vellore Institute of Technology, Vellore, India
+      year: Aug 2019 – May 2023
       description:
-        - Description 1.
-        - Description 2.
+        - Specialization in Artificial Intelligence and Machine Learning
+        - GPA: 8.5/10.0
+        - Relevant Coursework: Data Structures, Algorithms, Database Systems, Software Engineering, Computer Networks, Operating Systems
 
 - title: Experience
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
+    - title: Technology Analyst
+      institution: ICICI Bank, Mumbai, India
+      year: May 2023 – Jul 2024
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
+        - Led migration to Adobe's personalization platform across RIB, CIB, NLI, and iMobile, impacting 10M+ customers
+        - Improved efficiency by 7.5% and reduced rendering latency by 1s through optimized data processing pipelines
+        - Built ML-driven recommendation engines with logistic regression & real-time event processing using Apache Kafka
+        - Deployed scalable solutions in Unix/Linux environments with 99.9% uptime and automated CI/CD pipelines
+        - Collaborated with cross-functional teams to deliver high-impact customer experience improvements
+        - Mentored junior developers and conducted technical knowledge sharing sessions
+
+    - title: Research Assistant
+      institution: AI-ML-NLP Lab, IIT Patna (Remote)
+      year: Apr 2023 – Feb 2024
       description:
-        - Description 1.
-        - Description 2.
+        - Developed EDI-Summ, a multimodal summarization architecture with contextual + cross-attention
+        - Achieved 0.81 factual recall and 3.51 clinical score, outperforming GPT-3.5 & GPT-4V
+        - Enhanced BART pipelines with multimodal fusion for state-of-the-art healthcare summarization
+        - Conducted experiments in Linux-based distributed research environments
 
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
-
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
+    - title: MITACS Globalink Research Intern
+      institution: Polytechnique de Montréal, Canada
+      year: May 2022 – Aug 2022
       description:
+        - Built real-time decision support system with React.js, Node.js, and ML models
+        - Processed 20,000+ climate & water datasets across 30 cities
+        - Improved forecast accuracy by 25% and planning efficiency by 30%
+        - Deployed on Linux servers with scalable backend services
 
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
+    - title: Software Developer (OSPP & GSoC)
+      institution: JoomlaCMS (Remote)
+      year: Jul 2021 – Aug 2022
+      description:
+        - Developed customizable guided tour system with multi-language support & progress tracking
+        - Reduced onboarding drop-off by 20%
+        - Mentored contributors in selective Google Summer of Code program (0.2% acceptance rate)
+        - Collaborated with global teams via Git, Agile workflows, and CI/CD pipelines
 
-- title: Open Source Projects
+- title: Technical Skills
+  type: nested_list
+  contents:
+    - title: Programming Languages
+      items:
+        - Python (Expert), Java (Advanced), JavaScript (Advanced), C/C++ (Intermediate), SQL (Advanced), PHP (Intermediate), R (Intermediate)
+    - title: ML/AI Frameworks & Libraries
+      items:
+        - PyTorch, TensorFlow, Hugging Face Transformers, Scikit-learn, NumPy, Pandas, OpenCV, MediaPipe, Keras, XGBoost, LightGBM
+    - title: Web & Development
+      items:
+        - React.js, Node.js, Express.js, REST APIs, GraphQL, HTML5, CSS3, Bootstrap, jQuery, AJAX, WebSocket
+    - title: Cloud & DevOps
+      items:
+        - AWS (EC2, S3, Lambda, SageMaker, CloudFormation), Docker, Kubernetes, Git, CI/CD, Linux/Unix, Jenkins, Terraform
+    - title: Databases & Tools
+      items:
+        - MongoDB, PostgreSQL, MySQL, Redis, Apache Kafka, Jupyter, Streamlit, Apache Spark, Elasticsearch
+    - title: Research & Analytics
+      items:
+        - Jupyter Notebooks, Weights & Biases, TensorBoard, Matplotlib, Seaborn, Plotly, Tableau, Power BI
+    - title: Development Tools
+      items:
+        - VS Code, PyCharm, IntelliJ IDEA, Git, GitHub, GitLab, Postman, Swagger, Docker Desktop
+
+- title: Key Projects
   type: time_table
   contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+    - title: "EDI-Summ: Multimodal Clinical Document Summarization"
+      year: 2024
+      description: Developed state-of-the-art multimodal summarization architecture with contextual + cross-attention mechanisms, achieving 0.81 factual recall and 3.51 clinical score, outperforming GPT-3.5 & GPT-4V
+    - title: Gestural AI – Real-Time ASL Interpreter
+      year: 2024
+      description: Built real-time American Sign Language recognition system with 94% accuracy on 20,000+ videos & 166,000 images using Python, OpenCV, MediaPipe, and TensorFlow
+    - title: Clinical Summarization – Fine-Tuning ProphetNet
+      year: 2023
+      description: Fine-tuned ProphetNet on MeSum dataset, improving ROUGE scores and factual accuracy for clinical dialogue summarization in healthcare applications
+    - title: Climate Decision Support System (MITACS)
+      year: 2022
+      description: Designed real-time data analysis platform processing 20,000+ climate & water datasets across 30 cities, improving forecast accuracy by 25% using React.js, Node.js, and ML models
+    - title: JoomlaCMS Guided Tour System (GSoC & OSPP)
+      year: 2021-2022
+      description: Developed modular onboarding framework with multi-language support integrated into JoomlaCMS core, reducing user drop-off by 20% and improving user experience
 
 - title: Honors and Awards
   type: time_table
   contents:
-    - year: 1921
+    - year: 2024
       items:
-        - Nobel Prize in Physics
-        - Matteucci Medal
-    - year: 2029
+        - ACL 2024 Publication - "From Sights to Insights: Towards Summarization of Multimodal Clinical Documents"
+        - University of Florida Graduate Research Fellowship
+    - year: 2022
       items:
-        - Max Planck Medal
+        - MITACS Globalink Research Internship (Canada)
+        - Google Summer of Code (GSoC) Participant (0.2% acceptance rate)
+        - Open Source Promotion Plan (OSPP) Contributor
+    - year: 2021
+      items:
+        - Dean's List for Academic Excellence
+        - Best Project Award - Computer Science Department
 
-- title: Academic Interests
+- title: Research Interests
   type: nested_list
   contents:
-    - title: Topic 1.
+    - title: Machine Learning & AI
       items:
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
+        - Multimodal Learning, Deep Neural Networks, Transfer Learning
+        - Real-time Inference, Model Optimization, Federated Learning
+        - Computer Vision, Gesture Recognition, Healthcare AI
+    - title: Natural Language Processing
       items:
-        - Description 1.
-        - Description 2.
+        - Multimodal Summarization, Clinical NLP, Medical Text Processing
+        - Large Language Models, Prompt Engineering, Few-shot Learning
+        - Cross-lingual Processing, Machine Translation, NLG, NLU
+    - title: Distributed Systems & Engineering
+      items:
+        - Scalable Backend Services, Real-time Processing, Event Streaming
+        - Cloud Computing, Microservices Architecture, Containerization
+        - Data Engineering, ETL Pipelines, Real-time Analytics
+
+- title: Publications
+  type: time_table
+  contents:
+    - title: "From Sights to Insights: Towards Summarization of Multimodal Clinical Documents"
+      year: 2024
+      description: Published at ACL 2024 - International Conference on Computational Linguistics
+    - title: "EDI-Summ: Enhanced Multimodal Summarization for Healthcare Applications"
+      year: 2024
+      description: Under review at EMNLP 2024 - Conference on Empirical Methods in Natural Language Processing
+
+- title: Certifications
+  type: list
+  contents:
+    - AWS Certified Cloud Practitioner (2024)
+    - Google Cloud Professional Machine Learning Engineer (2024)
+    - Deep Learning Specialization - DeepLearning.AI (2023)
+    - Machine Learning with Python - IBM (2023)
+    - Data Science Professional Certificate - IBM (2023)
+    - Oracle Certified Java Programmer (2022)
+
+- title: Leadership & Activities
+  type: list
+  contents:
+    - <u>Technical Leadership:</u> Led cross-functional teams of 5+ developers in agile environments
+    - <u>Mentoring:</u> Mentored 10+ junior developers and students in ML/AI and software development
+    - <u>Open Source:</u> Active contributor to JoomlaCMS, PyTorch, and various healthcare AI projects
+    - <u>Community:</u> Speaker at local tech meetups and AI/ML conferences
 
 - title: Other Interests
   type: list
   contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+    - <u>Hobbies:</u> Open Source Contribution, Research, Technology Blogging, Photography, Hiking, Chess
+    - <u>Volunteer Work:</u> Mentoring students in ML/AI, Contributing to open-source healthcare projects, Teaching coding to underprivileged students
+    - <u>Sports:</u> Badminton, Swimming, Table Tennis
+    - <u>Creative:</u> Digital Photography, Technical Writing, UI/UX Design

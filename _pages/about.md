@@ -2,16 +2,16 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: <a href='https://www.ufl.edu/'>University of Florida</a>. Graduate Student. Researcher. Developer.
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: assets/img/prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>📍 Gainesville, FL, USA</p>
+    <p>📧 jatin.salve@ufl.edu</p>
+    <p>📞 +1 (352)-757-9671</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -21,14 +21,25 @@ announcements:
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
   limit: 5 # leave blank to include all the news in the `_news` folder
 
-latest_posts:
-  enabled: true
-  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I’m Jatin Salve, a Computer Science graduate student at the University of Florida who builds trustworthy AI systems for healthcare, accessibility, and large-scale decision making. I enjoy bringing research ideas into production environments where safety, latency, and interpretability matter.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+### Research & Industry Highlights
+- Designed high-throughput ML services at **ICICI Bank**, delivering real-time fraud and personalization signals for 10M+ customers.
+- Led evaluation and verification subsystems for **medical LLMs**, translating RDF query results into human-auditable evidence.
+- Published multimodal clinical summarization work (ACL 2024) that outperforms GPT-3.5 and GPT-4V on factual recall.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+### Technical Stack
+- **AI/ML:** Python, PyTorch, TensorFlow, JAX, LangChain, FAISS
+- **Knowledge Systems:** RDFLib, SPARQL, graph databases, retrieval-augmented generation
+- **Distributed & Product:** Docker, Kubernetes, AWS, Linux, React.js, Node.js
+- **Experimentation:** Weights & Biases, Apptainer, HiPerGator HPC
+
+### Community & Mentorship
+- Google Summer of Code alumnus and long-time JoomlaCMS contributor, with upstream modules adopted by thousands of sites.
+- Mentor for underrepresented students learning machine learning and open-source development.
+- Advocate for applied AI in healthcare, presenting workshops and lightning talks at academic and community meetups.
+
+### Let’s Collaborate
+I’m always excited to explore research collaborations, product partnerships, or speaking opportunities around multimodal AI, clinical NLP, and responsible deployment. Dive into my [publications](/publications/), explore ongoing [projects](/projects/), or grab my [CV](/cv/). Feel free to reach out—let’s build something meaningful together.
