@@ -25,7 +25,7 @@ ninja.data = [{
           },
         },{id: "nav-projects",
           title: "projects",
-          description: "A snapshot of the applied AI systems I am building.",
+          description: "Applied ML systems across visual search, responsible AI, personalization, and multimodal reasoning.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/projects/";
@@ -39,7 +39,7 @@ ninja.data = [{
           },
         },{id: "nav-cv",
           title: "cv",
-          description: "This is a description of the page. You can modify it in &#39;_pages/cv.md&#39;. You can also change or remove the top pdf download button.",
+          description: "Resume and selected experience in machine learning, visual search, responsible AI, and production ML systems.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/cv/";
@@ -448,11 +448,21 @@ ninja.data = [{
           description: "Fine-tuning ProphetNet for improved clinical dialogue summarization",
           section: "Projects",handler: () => {
               window.location.href = "/projects/5_project/";
-            },},{id: "projects-icici-bank-personalization-platform",
-          title: 'ICICI Bank Personalization Platform',
-          description: "ML-driven recommendation engines impacting 10M+ customers with 7.5% efficiency improvement",
+            },},{id: "projects-icici-bank-personalization-amp-ranking-platform",
+          title: 'ICICI Bank Personalization &amp;amp; Ranking Platform',
+          description: "Production ML recommendation and ranking systems serving 1M+ daily requests with measurable CTR and relevance gains",
           section: "Projects",handler: () => {
               window.location.href = "/projects/6_project/";
+            },},{id: "projects-visual-amp-multimodal-retrieval-system",
+          title: 'Visual &amp;amp; Multimodal Retrieval System',
+          description: "Vision-text retrieval with FAISS, learned reranking, Ray Serve latency optimization, and responsible AI evaluation",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/7_project/";
+            },},{id: "projects-user-behavior-segmentation-amp-predictive-profiling",
+          title: 'User Behavior Segmentation &amp;amp; Predictive Profiling',
+          description: "Behavior modeling pipeline for recommender systems using clustering, anomaly detection, sequence classification, and drift monitoring",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/8_project/";
             },},{
         id: 'social-email',
         title: 'email',
