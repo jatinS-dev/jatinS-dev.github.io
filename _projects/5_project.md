@@ -2,9 +2,10 @@
 layout: page
 title: "Clinical Summarization with ProphetNet"
 description: Fine-tuning ProphetNet for improved clinical dialogue summarization
-img: assets/img/prophetnet_project.jpg
-importance: 5
+img: assets/img/5.jpg
+importance: 7
 category: Research
+year: 2023
 ---
 
 ## Overview

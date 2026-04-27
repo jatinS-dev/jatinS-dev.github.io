@@ -2,8 +2,20 @@
 layout: page
 title: "Visual & Multimodal Retrieval System"
 description: "Vision-text retrieval with FAISS, learned reranking, Ray Serve latency optimization, and responsible AI evaluation"
+img: assets/img/3.jpg
 importance: 0
 category: AI/ML
+featured: true
+year: 2025 - Present
+metrics:
+  - "1M+ vectors indexed"
+  - "8-12% Recall@100 gain"
+  - "15-20% lower p95 latency"
+stack:
+  - PyTorch
+  - FAISS
+  - Ray Serve
+  - Hugging Face
 ---
 
 ## Overview

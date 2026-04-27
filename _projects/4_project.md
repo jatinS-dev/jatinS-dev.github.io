@@ -2,9 +2,20 @@
 layout: page
 title: "Verified Medical NLP – RDF-Grounded Jamba RAG"
 description: "RDF-grounded medical question answering with deterministic hallucination checks and Jamba MoE reasoning"
-img: assets/img/11.jpg
-importance: 0
+img: assets/img/9.jpg
+importance: 3
 category: Research
+featured: true
+year: 2025 - Present
+metrics:
+  - "14% lower hallucination rate"
+  - "Claim-level verification"
+  - "Auditable RDF grounding"
+stack:
+  - RDFLib
+  - SPARQL
+  - RAG
+  - Jamba
 giscus_comments: true
 ---
 

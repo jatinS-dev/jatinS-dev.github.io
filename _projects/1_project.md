@@ -2,9 +2,20 @@
 layout: page
 title: "Gestural AI – Real-Time ASL Interpreter"
 description: A real-time American Sign Language recognition system achieving 94% accuracy
-img: assets/img/asl_project.jpg
-importance: 1
+img: assets/img/8.jpg
+importance: 5
 category: AI/ML
+featured: true
+year: 2024
+metrics:
+  - "94% recognition accuracy"
+  - "20K+ videos"
+  - "Real-time inference"
+stack:
+  - TensorFlow
+  - OpenCV
+  - MediaPipe
+  - Streamlit
 related_publications: false
 ---
 

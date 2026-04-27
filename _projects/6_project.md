@@ -2,9 +2,20 @@
 layout: page
 title: ICICI Bank Personalization & Ranking Platform
 description: Production ML recommendation and ranking systems serving 1M+ daily requests with measurable CTR and relevance gains
-img: assets/img/banking_ml.jpg
+img: assets/img/10.jpg
 importance: 2
 category: AI/ML
+featured: true
+year: 2023 - 2025
+metrics:
+  - "1M+ daily requests"
+  - "9% CTR lift"
+  - "12% relevance improvement"
+stack:
+  - FastAPI
+  - Docker
+  - AWS ECS
+  - A/B testing
 ---
 
 ## Overview

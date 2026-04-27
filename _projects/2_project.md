@@ -2,9 +2,20 @@
 layout: page
 title: "EDI-Summ: Multimodal Clinical Summarization"
 description: "State-of-the-art multimodal summarization architecture for clinical documents"
-img: assets/img/clinical_nlp.jpg
-importance: 2
+img: assets/img/11.jpg
+importance: 4
 category: Research
+featured: true
+year: 2024
+metrics:
+  - "ACL 2024 long paper"
+  - "0.81 factual recall"
+  - "Vision cross-attention"
+stack:
+  - PyTorch
+  - NLP
+  - Multimodal AI
+  - Evaluation
 giscus_comments: true
 related_publications: true
 ---

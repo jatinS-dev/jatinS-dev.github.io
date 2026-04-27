@@ -2,16 +2,16 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='https://www.ufl.edu/'>University of Florida</a>. Machine Learning Engineer. Visual Search & Responsible AI Researcher.
+subtitle: Machine Learning Engineer building visual search, personalization, and responsible AI systems.
 
 profile:
   align: right
   image: assets/img/prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>📍 Gainesville, FL, USA</p>
-    <p>📧 jatin.salve@ufl.edu</p>
-    <p>📞 +1 (352)-757-9671</p>
+    <p>Gainesville, FL</p>
+    <p><a href="mailto:jatin.salve@ufl.edu">jatin.salve@ufl.edu</a></p>
+    <p><a href="/cv/">resume</a> · <a href="/projects/">projects</a></p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -23,24 +23,51 @@ announcements:
 
 ---
 
-I’m Jatin Salve, an M.S. Computer Science student on the Machine Learning track at the University of Florida. I build production-ready ML systems across computer vision, visual retrieval, generative AI, personalization, and responsible AI, with a particular interest in making multimodal systems fast, measurable, and trustworthy.
+<section class="portfolio-hero">
+  <p class="eyebrow">M.S. Computer Science · University of Florida</p>
+  <h2>Production ML for search, ranking, and trustworthy multimodal AI.</h2>
+  <p>
+    I’m Jatin Salve, a machine learning engineer and researcher focused on computer vision,
+    visual retrieval, recommender systems, generative AI, and responsible AI evaluation. I like
+    systems where model quality, latency, reliability, and product impact are measured together.
+  </p>
+  <div class="portfolio-actions">
+    <a class="portfolio-button primary" href="/projects/">View projects</a>
+    <a class="portfolio-button" href="/cv/">Download resume</a>
+    <a class="portfolio-button" href="mailto:jatin.salve@ufl.edu">Contact</a>
+  </div>
+</section>
 
-### Research & Industry Highlights
-- Built multimodal retrieval pipelines that combine visual and textual signals, improving NDCG@10 by **21%** with dense transformer embeddings, FAISS vector search, and learned reranking.
-- Shipped recommendation and ranking systems at **ICICI Bank** serving **1M+ daily requests**, delivering a **9% CTR lift** and **12% relevance improvement** over production baselines.
-- Developed responsible AI evaluation harnesses for claim-level verification, context grounding, faithfulness, safety, and hallucination reduction.
-- Published at **ACL 2024**, with additional structured medical QA work submitted to an **ACL 2026** workshop.
+<section class="metric-strip" aria-label="Selected impact metrics">
+  <div>
+    <strong>1M+</strong>
+    <span>daily production ML requests</span>
+  </div>
+  <div>
+    <strong>21%</strong>
+    <span>NDCG@10 lift in multimodal retrieval</span>
+  </div>
+  <div>
+    <strong>9%</strong>
+    <span>CTR lift from ranking improvements</span>
+  </div>
+  <div>
+    <strong>ACL</strong>
+    <span>2024 publication, 2026 submission</span>
+  </div>
+</section>
 
-### Technical Stack
-- **ML & Retrieval:** Python, PyTorch, TensorFlow, Hugging Face Transformers, FAISS, XGBoost, MLflow
-- **Computer Vision:** visual encoders, multimodal embeddings, ranking/reranking, dense retrieval, ANN indexing
-- **Generative & Agentic AI:** RAG, LoRA/QLoRA, vLLM, LangGraph, tool-using agents, structured outputs
-- **ML Systems:** Ray Serve, FastAPI, Docker, Kubernetes, AWS ECS/S3/Lambda, CI/CD, A/B testing
+### What I Build
+- **Visual search & multimodal retrieval:** dense embeddings, FAISS / ANN indexing, learned reranking, evaluation pipelines.
+- **Recommendation & personalization systems:** user understanding, segmentation, sequence modeling, A/B-tested production deployment.
+- **Responsible generative AI:** RAG, claim-level verification, faithfulness checks, safety evaluation, hallucination reduction.
+- **ML infrastructure:** Ray Serve, FastAPI, Docker, Kubernetes, AWS ECS/S3/Lambda, GPU batching, CI/CD.
 
-### Current Focus
-- Visual and multimodal search systems with responsible AI evaluation.
-- User behavior segmentation, predictive profiling, recommender systems, and production experimentation.
-- Full-stack ML deployment where model quality, latency, reliability, and product impact are measured together.
+### Selected Work
+- Built multimodal retrieval pipelines combining visual and textual signals, improving **NDCG@10 by 21%** with dense transformer embeddings and reranking.
+- Shipped recommendation and ranking systems at **ICICI Bank** serving **1M+ daily requests**, delivering a **9% CTR lift** and **12% relevance improvement**.
+- Developed responsible AI evaluation harnesses for context grounding, faithfulness, safety, and claim-level verification.
+- Published multimodal clinical summarization work at **ACL 2024**, with structured medical QA work submitted to an **ACL 2026** workshop.
 
-### Let's Collaborate
-I’m available **September 21 - December 11, 2026** for full-time ML internship work and open to roles in San Francisco, Palo Alto, Seattle, New York, or remote. Explore my [projects](/projects/), read my [publications](/publications/), or download my [resume](/cv/).
+### Availability
+Available **September 21 - December 11, 2026** for full-time ML internship work in San Francisco, Palo Alto, Seattle, New York, or remote.

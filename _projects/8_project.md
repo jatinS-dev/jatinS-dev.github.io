@@ -2,8 +2,20 @@
 layout: page
 title: "User Behavior Segmentation & Predictive Profiling"
 description: "Behavior modeling pipeline for recommender systems using clustering, anomaly detection, sequence classification, and drift monitoring"
+img: assets/img/12.jpg
 importance: 1
 category: AI/ML
+featured: true
+year: 2026 - Present
+metrics:
+  - "Clustering + anomaly detection"
+  - "Transformer/LSTM/XGBoost benchmarks"
+  - "Drift monitoring harness"
+stack:
+  - scikit-learn
+  - PyTorch
+  - XGBoost
+  - Transformers
 ---
 
 ## Overview

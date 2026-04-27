@@ -2,9 +2,10 @@
 layout: page
 title: Climate Decision Support System
 description: Real-time data analysis platform for climate and water management across 30 cities
-img: assets/img/climate_system.jpg
-importance: 3
+img: assets/img/6.jpg
+importance: 8
 category: Research
+year: 2023
 redirect: https://github.com/jatinS-dev/climate-decision-support
 ---
 

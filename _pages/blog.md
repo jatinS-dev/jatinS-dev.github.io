@@ -1,18 +1,18 @@
 ---
 layout: default
 permalink: /blog/
-title: blog
+title: writing
 nav: true
-nav_order: 1
+nav_order: 4
 ---
 
 <section class="medium-blog container py-4">
   <header class="mb-4">
     <h1 class="text-capitalize">{{ page.title }}</h1>
     <p>
-      I now publish exclusively on
+      Longer notes and essays live on
       <a href="https://aizen-ai.medium.com/" target="_blank" rel="noopener">Medium</a>.
-      Browse the latest stories below or visit my profile for the full archive.
+      I write about applied ML, multimodal systems, research workflows, and the engineering details that make AI systems useful outside notebooks.
     </p>
   </header>
 
