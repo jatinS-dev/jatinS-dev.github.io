@@ -7,14 +7,14 @@ first_name: Jatin
 middle_name: A.
 last_name: Salve
 contact_note: >
-  You can even add a little note about which of these is the best way to reach you.
+  Best reached by email for ML research, internship, and collaboration opportunities.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+  Portfolio of Jatin Avinash Salve, a machine learning engineer and University of Florida M.S. Computer Science student focused on computer vision, visual search, generative AI, responsible AI, and production ML systems.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
   Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
-keywords: jekyll, jekyll-theme, academic-website, portfolio-website # add your own keywords or leave empty
+keywords: machine learning, computer vision, visual search, generative AI, responsible AI, multimodal retrieval, recommender systems, production ML # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 

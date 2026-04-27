@@ -1,37 +1,36 @@
 ---
 layout: page
-title: ICICI Bank Personalization Platform
-description: ML-driven recommendation engines impacting 10M+ customers with 7.5% efficiency improvement
+title: ICICI Bank Personalization & Ranking Platform
+description: Production ML recommendation and ranking systems serving 1M+ daily requests with measurable CTR and relevance gains
 img: assets/img/banking_ml.jpg
-importance: 6
+importance: 2
 category: AI/ML
 ---
 
 ## Overview
 
-Led the migration to Adobe's personalization platform across **RIB, CIB, NLI, and iMobile** applications at ICICI Bank, impacting **10M+ customers**. This project involved building sophisticated ML-driven recommendation engines and implementing real-time personalization systems that significantly improved user experience and business metrics.
+Built ML-powered personalization, recommendation, and ranking systems at **ICICI Bank** serving **1M+ daily requests**. The platform supported real-time user understanding, model experimentation, and production deployment for banking personalization workflows.
 
 ## Impact & Results
 
-- **10M+ customers** impacted across multiple banking applications
-- **7.5% improvement** in overall system efficiency
-- **1 second reduction** in rendering latency
-- **Real-time personalization** enabling dynamic content delivery
-- **Scalable deployment** across Unix/Linux environments
+- **9% CTR lift** from transformer-based ranking experiments
+- **12% improvement** in recommendation relevance over production baselines
+- **1M+ daily requests** served by production ML workflows
+- Faster model prototyping and reproducible A/B-tested deployment
 
 ## Technical Implementation
 
 ### Machine Learning Pipeline
-- **Logistic Regression Models**: Core recommendation algorithms for personalized content
-- **Event Processing Pipelines**: Real-time data processing for user behavior analysis
-- **A/B Testing Framework**: Systematic testing and optimization of personalization strategies
-- **Model Monitoring**: Continuous performance tracking and model updates
+- **Transformer-Based Ranking**: GPU-backed ranking models for personalized product and policy recommendations
+- **User Understanding Models**: Supervised and unsupervised learning over preference, behavior, and segmentation signals
+- **Sequence Modeling**: Behavioral pattern modeling for real-time personalization
+- **Experimentation Framework**: Reproducible training, evaluation, and A/B-tested deployment
 
 ### System Architecture
-- **Distributed Systems**: Scalable architecture supporting millions of users
-- **Real-time Processing**: Low-latency personalization for immediate user experience
-- **Data Integration**: Seamless integration with existing banking infrastructure
-- **Security Compliance**: Enterprise-grade security for financial data
+- **Training & Serving**: Python workflows with FastAPI, Docker, and AWS ECS
+- **Real-time Processing**: Low-latency personalization and recommendation serving
+- **Data Integration**: Large-scale banking data platform integration for automated policy personalization
+- **Production Reliability**: CI/CD workflows and repeatable deployment paths
 
 ## Key Features
 
@@ -49,12 +48,10 @@ Led the migration to Adobe's personalization platform across **RIB, CIB, NLI, an
 
 ## Technologies & Tools
 
-- **Machine Learning**: Python, scikit-learn, pandas, numpy
-- **Big Data**: Apache Spark, Hadoop for large-scale data processing
-- **Backend**: Java, Spring Framework for enterprise applications
-- **Infrastructure**: Unix/Linux servers, Docker containers
-- **Databases**: Oracle, MongoDB for data storage and retrieval
-- **Analytics**: Tableau, custom dashboards for business intelligence
+- **Machine Learning**: Python, PyTorch, scikit-learn, transformer ranking, clustering, anomaly detection
+- **Serving**: FastAPI, Docker, AWS ECS
+- **Experimentation**: A/B testing, reproducible evaluation, model monitoring
+- **Infrastructure**: GPU inference, CI/CD, large-scale data platform integration
 
 ## Business Impact
 
@@ -65,10 +62,10 @@ Led the migration to Adobe's personalization platform across **RIB, CIB, NLI, an
 - **Cross-selling**: Intelligent product recommendations increasing revenue
 
 ### Operational Excellence
-- **System Efficiency**: 7.5% improvement in overall platform performance
-- **Cost Optimization**: Reduced infrastructure costs through better resource utilization
-- **Scalability**: Architecture supporting future growth and expansion
-- **Reliability**: High availability and fault-tolerant systems
+- **Recommendation Quality**: 12% relevance improvement from model iteration and reranking
+- **Engagement**: 9% CTR lift from production ranking improvements
+- **Experimentation Speed**: Faster iteration from end-to-end training and serving workflows
+- **Scalability**: Architecture supporting high-volume personalization requests
 
 ## Challenges & Solutions
 
@@ -83,14 +80,3 @@ Led the migration to Adobe's personalization platform across **RIB, CIB, NLI, an
 - **Caching Strategies**: Redis and in-memory caching for improved performance
 - **Load Balancing**: Distributed traffic management for optimal resource utilization
 - **Data Validation**: Comprehensive data quality checks and validation processes
-
-## Future Enhancements
-
-- **Advanced ML Models**: Deep learning integration for more sophisticated recommendations
-- **Real-time Analytics**: Enhanced analytics for immediate business insights
-- **Mobile Optimization**: Further improvements for mobile banking experiences
-- **AI-Powered Insights**: Predictive analytics for proactive customer service
-
-## Industry Recognition
-
-This project represents a significant advancement in banking technology, demonstrating the successful application of machine learning and personalization in the financial services sector. The results have been recognized internally and serve as a model for similar implementations across the industry.

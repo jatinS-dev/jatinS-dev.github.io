@@ -10,184 +10,138 @@
     - name: Phone
       value: +1 (352)-757-9671
     - name: LinkedIn
-      value: linkedin.com/in/jatinsalve
-    - name: GitHub
-      value: github.com/jatinS-dev
-    - name: Languages
-      value: English (Fluent), Hindi (Native), Marathi (Native), French (Basic)
+      value: linkedin.com/in/jatin-salve
+    - name: Portfolio
+      value: jatins-dev.github.io
+    - name: Availability
+      value: September 21 - December 11, 2026; full-time, 40 hrs/week
+
+- title: Summary
+  type: list
+  contents:
+    - M.S. Computer Science student on the Machine Learning track at the University of Florida with hands-on production ML experience across computer vision, visual retrieval, generative AI, and responsible AI.
+    - Published at ACL 2024, with additional work submitted to ACL 2026, and built full-stack ML systems serving 1M+ daily requests.
+    - Seeking applied ML roles in visual search, recommendation systems, multimodal retrieval, responsible AI, and production ML systems.
 
 - title: Education
   type: time_table
   contents:
-    - title: Master of Science - Computer Science
+    - title: M.S. Computer Science, Machine Learning Track
       institution: University of Florida, Gainesville, FL, USA
-      year: Aug 2024 – May 2026 (Expected)
+      year: Aug 2025 - May 2027
       description:
-        - Focus on Machine Learning, NLP, and Distributed Systems
-        - Research in Multimodal AI and Healthcare Applications
-        - GPA: 3.8/4.0
-        - Relevant Coursework: Advanced Machine Learning, Natural Language Processing, Distributed Systems, Computer Vision, Data Mining, Algorithms
-    - title: Bachelor of Technology - Computer Science and Engineering
-      institution: Vellore Institute of Technology, Vellore, India
-      year: Aug 2019 – May 2023
-      description:
-        - Specialization in Artificial Intelligence and Machine Learning
-        - GPA: 8.5/10.0
-        - Relevant Coursework: Data Structures, Algorithms, Database Systems, Software Engineering, Computer Networks, Operating Systems
+        - "GPA: 3.89 / 4.00"
+        - "Coursework: Machine Learning, Deep Learning, NLP, Large Language Models, Computer Vision, Distributed ML, Statistical Modeling, Agentic AI Systems"
 
 - title: Experience
   type: time_table
   contents:
-    - title: Technology Analyst
-      institution: ICICI Bank, Mumbai, India
-      year: May 2023 – Jul 2024
+    - title: Research Assistant - Computer Vision, Multimodal AI & Responsible AI
+      institution: University of Florida, Gainesville, FL, USA
+      year: Dec 2025 - Present
       description:
-        - Led migration to Adobe's personalization platform across RIB, CIB, NLI, and iMobile, impacting 10M+ customers
-        - Improved efficiency by 7.5% and reduced rendering latency by 1s through optimized data processing pipelines
-        - Built ML-driven recommendation engines with logistic regression & real-time event processing using Apache Kafka
-        - Deployed scalable solutions in Unix/Linux environments with 99.9% uptime and automated CI/CD pipelines
-        - Collaborated with cross-functional teams to deliver high-impact customer experience improvements
-        - Mentored junior developers and conducted technical knowledge sharing sessions
+        - "Advisor: Prof. Yonghui Wu"
+        - Designed and evaluated multimodal retrieval pipelines combining visual and textual signals; improved NDCG@10 by 21% through dense transformer embeddings, FAISS vector search, and learned reranking.
+        - Built claim-level verification and context-grounding strategies for generative AI outputs, reducing hallucination rate by 14%; developed responsible AI evaluation harnesses for faithfulness, accuracy, and safety.
+        - Developed supervised and unsupervised ML models for classification, segmentation, and clustering over NLP and structured signals, with experimentation pipelines measuring quality and reliability trade-offs.
+        - Engineered a two-agent LangGraph orchestration system with autonomous task decomposition and tool-use interfaces; reduced average response latency by 32% in a production-ready Ray Serve deployment.
 
-    - title: Research Assistant
-      institution: AI-ML-NLP Lab, IIT Patna (Remote)
-      year: Apr 2023 – Feb 2024
+    - title: Machine Learning Engineer - Personalization, Ranking & Production ML
+      institution: ICICI Bank Pvt Limited, Mumbai, India
+      year: Jul 2023 - Jul 2025
       description:
-        - Developed EDI-Summ, a multimodal summarization architecture with contextual + cross-attention
-        - Achieved 0.81 factual recall and 3.51 clinical score, outperforming GPT-3.5 & GPT-4V
-        - Enhanced BART pipelines with multimodal fusion for state-of-the-art healthcare summarization
-        - Conducted experiments in Linux-based distributed research environments
+        - Built ML-powered recommendation and ranking systems serving 1M+ daily requests; applied transformer-based ranking on GPU infrastructure, achieving a 9% CTR lift and 12% improvement in recommendation relevance.
+        - Developed user understanding and segmentation models using supervised and unsupervised learning, including sequence modeling, clustering, and anomaly detection, to capture preference and behavioral signals for real-time personalization.
+        - Built end-to-end Python training, serving, and experimentation workflows with FastAPI, Docker, and AWS ECS, enabling rapid model prototyping, iterative A/B-tested deployment, and reproducible evaluation at scale.
+        - Integrated AI tooling with large-scale data platforms for automated policy personalization across data engineering, training, inference, and product deployment.
 
-    - title: MITACS Globalink Research Intern
-      institution: Polytechnique de Montréal, Canada
-      year: May 2022 – Aug 2022
+    - title: Research Intern - Neural Retrieval & Multimodal Representation
+      institution: IIT Patna AI-ML-NLP Lab, Remote, India
+      year: Apr 2023 - Feb 2024
       description:
-        - Built real-time decision support system with React.js, Node.js, and ML models
-        - Processed 20,000+ climate & water datasets across 30 cities
-        - Improved forecast accuracy by 25% and planning efficiency by 30%
-        - Deployed on Linux servers with scalable backend services
+        - Built dense retrieval and reranking pipelines for content matching over 500K+ documents; improved NDCG@10 by 17% over BM25 using transformer embeddings.
+        - Developed unsupervised clustering and anomaly detection models over behavioral event streams.
+        - Optimized GPU-based inference pipelines, reducing end-to-end query latency by 40%.
 
-    - title: Software Developer (OSPP & GSoC)
-      institution: JoomlaCMS (Remote)
-      year: Jul 2021 – Aug 2022
+    - title: Research Intern - Sequence Modeling & Behavioral Prediction
+      institution: Polytechnique Montreal, Montreal, Canada
+      year: May 2023 - Aug 2023
       description:
-        - Developed customizable guided tour system with multi-language support & progress tracking
-        - Reduced onboarding drop-off by 20%
-        - Mentored contributors in selective Google Summer of Code program (0.2% acceptance rate)
-        - Collaborated with global teams via Git, Agile workflows, and CI/CD pipelines
+        - "MITACS Globalink Fellow, selected as part of a cohort of approximately 200 awardees per year."
+        - Trained neural sequence models over 10M+ data points for temporal pattern learning; accelerated training 3.8x via parallel computing and optimized C++ pipelines.
+        - Implemented GPU-accelerated training loops and bottleneck profiling for production-grade behavioral prediction systems.
 
 - title: Technical Skills
   type: nested_list
   contents:
-    - title: Programming Languages
+    - title: Languages
       items:
-        - Python (Expert), Java (Advanced), JavaScript (Advanced), C/C++ (Intermediate), SQL (Advanced), PHP (Intermediate), R (Intermediate)
-    - title: ML/AI Frameworks & Libraries
+        - Python, Java, C++, CUDA, SQL, Go, TypeScript
+    - title: ML / Deep Learning
       items:
-        - PyTorch, TensorFlow, Hugging Face Transformers, Scikit-learn, NumPy, Pandas, OpenCV, MediaPipe, Keras, XGBoost, LightGBM
-    - title: Web & Development
+        - PyTorch, TensorFlow, Hugging Face Transformers, scikit-learn, XGBoost, MLflow
+        - Supervised and unsupervised learning, clustering, anomaly detection, time-series modeling
+    - title: Computer Vision & Visual Search
       items:
-        - React.js, Node.js, Express.js, REST APIs, GraphQL, HTML5, CSS3, Bootstrap, jQuery, AJAX, WebSocket
-    - title: Cloud & DevOps
+        - Image feature extraction, dense retrieval, transformer-based visual encoders, multimodal embeddings
+        - Ranking and reranking models, FAISS / ANN indexing
+    - title: Generative AI & LLMs
       items:
-        - AWS (EC2, S3, Lambda, SageMaker, CloudFormation), Docker, Kubernetes, Git, CI/CD, Linux/Unix, Jenkins, Terraform
-    - title: Databases & Tools
+        - LLM fine-tuning, LoRA, QLoRA, RLHF, vLLM, RAG pipelines, multimodal generation
+        - Prompt engineering, evaluation pipelines, responsible AI, faithfulness verification
+    - title: Agentic AI & Orchestration
       items:
-        - MongoDB, PostgreSQL, MySQL, Redis, Apache Kafka, Jupyter, Streamlit, Apache Spark, Elasticsearch
-    - title: Research & Analytics
+        - Multi-agent systems, LangGraph, tool-using agents, autonomous task decomposition, agent evaluation harnesses, structured outputs
+    - title: ML Systems & Infrastructure
       items:
-        - Jupyter Notebooks, Weights & Biases, TensorBoard, Matplotlib, Seaborn, Plotly, Tableau, Power BI
-    - title: Development Tools
-      items:
-        - VS Code, PyCharm, IntelliJ IDEA, Git, GitHub, GitLab, Postman, Swagger, Docker Desktop
+        - Ray Serve, FastAPI, Docker, Kubernetes, AWS ECS, S3, Lambda, distributed training, CI/CD, A/B testing
+        - GPU optimization, batching, parallelism
 
 - title: Key Projects
   type: time_table
   contents:
-    - title: "EDI-Summ: Multimodal Clinical Document Summarization"
-      year: 2024
-      description: Developed state-of-the-art multimodal summarization architecture with contextual + cross-attention mechanisms, achieving 0.81 factual recall and 3.51 clinical score, outperforming GPT-3.5 & GPT-4V
-    - title: Gestural AI – Real-Time ASL Interpreter
-      year: 2024
-      description: Built real-time American Sign Language recognition system with 94% accuracy on 20,000+ videos & 166,000 images using Python, OpenCV, MediaPipe, and TensorFlow
-    - title: Clinical Summarization – Fine-Tuning ProphetNet
-      year: 2023
-      description: Fine-tuned ProphetNet on MeSum dataset, improving ROUGE scores and factual accuracy for clinical dialogue summarization in healthcare applications
-    - title: Climate Decision Support System (MITACS)
-      year: 2022
-      description: Designed real-time data analysis platform processing 20,000+ climate & water datasets across 30 cities, improving forecast accuracy by 25% using React.js, Node.js, and ML models
-    - title: JoomlaCMS Guided Tour System (GSoC & OSPP)
-      year: 2021-2022
-      description: Developed modular onboarding framework with multi-language support integrated into JoomlaCMS core, reducing user drop-off by 20% and improving user experience
+    - title: Visual & Multimodal Retrieval System with Responsible-AI Evaluation
+      year: Aug 2025 - Present
+      description:
+        - "Stack: Python, PyTorch, FAISS, Hugging Face, Ray Serve"
+        - Designed a multimodal retrieval pipeline combining vision and text encoders with dense FAISS indexing over 1M+ vectors.
+        - Achieved 8-12% gains in Recall@100 and 15-20% reduction in p95 latency via GPU-optimized Ray Serve batching.
+        - Integrated claim-level faithfulness verification and responsible AI evaluation harnesses across retrieval quality, latency, and failure modes.
 
-- title: Honors and Awards
-  type: time_table
-  contents:
-    - year: 2024
-      items:
-        - ACL 2024 Publication - "From Sights to Insights: Towards Summarization of Multimodal Clinical Documents"
-        - University of Florida Graduate Research Fellowship
-    - year: 2022
-      items:
-        - MITACS Globalink Research Internship (Canada)
-        - Google Summer of Code (GSoC) Participant (0.2% acceptance rate)
-        - Open Source Promotion Plan (OSPP) Contributor
-    - year: 2021
-      items:
-        - Dean's List for Academic Excellence
-        - Best Project Award - Computer Science Department
-
-- title: Research Interests
-  type: nested_list
-  contents:
-    - title: Machine Learning & AI
-      items:
-        - Multimodal Learning, Deep Neural Networks, Transfer Learning
-        - Real-time Inference, Model Optimization, Federated Learning
-        - Computer Vision, Gesture Recognition, Healthcare AI
-    - title: Natural Language Processing
-      items:
-        - Multimodal Summarization, Clinical NLP, Medical Text Processing
-        - Large Language Models, Prompt Engineering, Few-shot Learning
-        - Cross-lingual Processing, Machine Translation, NLG, NLU
-    - title: Distributed Systems & Engineering
-      items:
-        - Scalable Backend Services, Real-time Processing, Event Streaming
-        - Cloud Computing, Microservices Architecture, Containerization
-        - Data Engineering, ETL Pipelines, Real-time Analytics
+    - title: User Behavior Segmentation & Predictive Profiling Pipeline
+      year: Jan 2026 - Present
+      description:
+        - "Stack: Python, scikit-learn, PyTorch, XGBoost, Hugging Face"
+        - Applied supervised and unsupervised learning to model user behavior patterns through clustering, anomaly detection, and sequence classification.
+        - Benchmarked XGBoost, transformer, and LSTM architectures across latency and accuracy trade-offs.
+        - Built temporal feature engineering and drift-detection harnesses for user understanding and recommender systems.
 
 - title: Publications
   type: time_table
   contents:
+    - title: "Structure-Grounded Medical QA: RDF Retrieval and Claim-Level Verification for Faithful Answering"
+      year: 2026
+      description:
+        - "ACL 2026 Workshop on Structured Understanding and Reasoning for Generative LLMs (SURGeLLM) - Submitted"
+        - "Authors: Stocks Natalias, Jatin S., Hunter, Kunchepu, Herrera, Youm, Gilda, Dorr"
+        - "Contribution: proposed claim-level verification as the core faithfulness mechanism; designed the structured retrieval pipeline; led evaluation design."
+
     - title: "From Sights to Insights: Towards Summarization of Multimodal Clinical Documents"
       year: 2024
-      description: Published at ACL 2024 - International Conference on Computational Linguistics
-    - title: "EDI-Summ: Enhanced Multimodal Summarization for Healthcare Applications"
-      year: 2024
-      description: Under review at EMNLP 2024 - Conference on Empirical Methods in Natural Language Processing
+      description:
+        - "ACL 2024 Long Paper, Main Conference"
+        - "Authors: Ghosh, Tomar, Tiwari, Saha, Jatin S., Sinha"
+        - "Contribution: designed the vision cross-attention fusion module; ran ablation studies isolating the contribution of multimodal grounding."
 
-- title: Certifications
+    - title: "Anisotropic Noise Injection for Improving Utility in Differentially Private SGD"
+      year: Under Review
+      description:
+        - "University of Florida"
+        - "Authors: Jatin S., Nahar, Mali"
+        - "Contribution: originated the core idea of shaping noise along gradient covariance eigenvectors; led theoretical derivation and empirical evaluation."
+
+- title: Target Roles
   type: list
   contents:
-    - AWS Certified Cloud Practitioner (2024)
-    - Google Cloud Professional Machine Learning Engineer (2024)
-    - Deep Learning Specialization - DeepLearning.AI (2023)
-    - Machine Learning with Python - IBM (2023)
-    - Data Science Professional Certificate - IBM (2023)
-    - Oracle Certified Java Programmer (2022)
-
-- title: Leadership & Activities
-  type: list
-  contents:
-    - <u>Technical Leadership:</u> Led cross-functional teams of 5+ developers in agile environments
-    - <u>Mentoring:</u> Mentored 10+ junior developers and students in ML/AI and software development
-    - <u>Open Source:</u> Active contributor to JoomlaCMS, PyTorch, and various healthcare AI projects
-    - <u>Community:</u> Speaker at local tech meetups and AI/ML conferences
-
-- title: Other Interests
-  type: list
-  contents:
-    - <u>Hobbies:</u> Open Source Contribution, Research, Technology Blogging, Photography, Hiking, Chess
-    - <u>Volunteer Work:</u> Mentoring students in ML/AI, Contributing to open-source healthcare projects, Teaching coding to underprivileged students
-    - <u>Sports:</u> Badminton, Swimming, Table Tennis
-    - <u>Creative:</u> Digital Photography, Technical Writing, UI/UX Design
+    - Visual search, computer vision, multimodal retrieval, recommendation systems, and production ML internships or applied research roles.
+    - Open to San Francisco, Palo Alto, Seattle, New York, or remote opportunities.

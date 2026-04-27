@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='https://www.ufl.edu/'>University of Florida</a>. Graduate Student. Researcher. Developer.
+subtitle: <a href='https://www.ufl.edu/'>University of Florida</a>. Machine Learning Engineer. Visual Search & Responsible AI Researcher.
 
 profile:
   align: right
@@ -23,23 +23,24 @@ announcements:
 
 ---
 
-I’m Jatin Salve, a Computer Science graduate student at the University of Florida who builds trustworthy AI systems for healthcare, accessibility, and large-scale decision making. I enjoy bringing research ideas into production environments where safety, latency, and interpretability matter.
+I’m Jatin Salve, an M.S. Computer Science student on the Machine Learning track at the University of Florida. I build production-ready ML systems across computer vision, visual retrieval, generative AI, personalization, and responsible AI, with a particular interest in making multimodal systems fast, measurable, and trustworthy.
 
 ### Research & Industry Highlights
-- Designed high-throughput ML services at **ICICI Bank**, delivering real-time fraud and personalization signals for 10M+ customers.
-- Led evaluation and verification subsystems for **medical LLMs**, translating RDF query results into human-auditable evidence.
-- Published multimodal clinical summarization work (ACL 2024) that outperforms GPT-3.5 and GPT-4V on factual recall.
+- Built multimodal retrieval pipelines that combine visual and textual signals, improving NDCG@10 by **21%** with dense transformer embeddings, FAISS vector search, and learned reranking.
+- Shipped recommendation and ranking systems at **ICICI Bank** serving **1M+ daily requests**, delivering a **9% CTR lift** and **12% relevance improvement** over production baselines.
+- Developed responsible AI evaluation harnesses for claim-level verification, context grounding, faithfulness, safety, and hallucination reduction.
+- Published at **ACL 2024**, with additional structured medical QA work submitted to an **ACL 2026** workshop.
 
 ### Technical Stack
-- **AI/ML:** Python, PyTorch, TensorFlow, JAX, LangChain, FAISS
-- **Knowledge Systems:** RDFLib, SPARQL, graph databases, retrieval-augmented generation
-- **Distributed & Product:** Docker, Kubernetes, AWS, Linux, React.js, Node.js
-- **Experimentation:** Weights & Biases, Apptainer, HiPerGator HPC
+- **ML & Retrieval:** Python, PyTorch, TensorFlow, Hugging Face Transformers, FAISS, XGBoost, MLflow
+- **Computer Vision:** visual encoders, multimodal embeddings, ranking/reranking, dense retrieval, ANN indexing
+- **Generative & Agentic AI:** RAG, LoRA/QLoRA, vLLM, LangGraph, tool-using agents, structured outputs
+- **ML Systems:** Ray Serve, FastAPI, Docker, Kubernetes, AWS ECS/S3/Lambda, CI/CD, A/B testing
 
-### Community & Mentorship
-- Google Summer of Code alumnus and long-time JoomlaCMS contributor, with upstream modules adopted by thousands of sites.
-- Mentor for underrepresented students learning machine learning and open-source development.
-- Advocate for applied AI in healthcare, presenting workshops and lightning talks at academic and community meetups.
+### Current Focus
+- Visual and multimodal search systems with responsible AI evaluation.
+- User behavior segmentation, predictive profiling, recommender systems, and production experimentation.
+- Full-stack ML deployment where model quality, latency, reliability, and product impact are measured together.
 
-### Let’s Collaborate
-I’m always excited to explore research collaborations, product partnerships, or speaking opportunities around multimodal AI, clinical NLP, and responsible deployment. Dive into my [publications](/publications/), explore ongoing [projects](/projects/), or grab my [CV](/cv/). Feel free to reach out—let’s build something meaningful together.
+### Let's Collaborate
+I’m available **September 21 - December 11, 2026** for full-time ML internship work and open to roles in San Francisco, Palo Alto, Seattle, New York, or remote. Explore my [projects](/projects/), read my [publications](/publications/), or download my [resume](/cv/).

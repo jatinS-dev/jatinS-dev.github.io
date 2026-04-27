@@ -3,17 +3,40 @@
 
 @string{acl = {Association for Computational Linguistics,}}
 
-@article{salve2024multimodal,
+@inproceedings{ghosh2024sights,
   abbr={ACL},
   bibtex_show={true},
   title={From Sights to Insights: Towards Summarization of Multimodal Clinical Documents},
-  author={Salve, Jatin Avinash and others},
-  abstract={We present EDI-Summ, a novel multimodal summarization architecture that combines contextual and cross-attention mechanisms for clinical document summarization. Our approach achieves state-of-the-art performance with 0.81 factual recall and 3.51 clinical score, outperforming GPT-3.5 and GPT-4V on clinical summarization tasks. The system integrates visual and textual information from clinical documents to generate comprehensive summaries that maintain both factual accuracy and clinical relevance.},
-  journal={Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (ACL)},
+  author={Ghosh, Soumya and Tomar, Mohit and Tiwari, Anshul and Saha, Sriparna and Salve, Jatin Avinash and Sinha, Manjira},
+  abstract={Multimodal clinical document summarization work focused on grounding generated summaries in visual and textual evidence. Contribution: designed the vision cross-attention fusion module and ran ablation studies isolating the contribution of multimodal grounding.},
+  booktitle={Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics},
   year={2024},
   month={August},
   publisher=acl,
   selected={true},
-  additional_info={This work represents a significant advancement in multimodal clinical NLP, with applications in healthcare documentation and medical decision support systems.},
-  annotation={* First author<br>† Corresponding author}
+  additional_info={ACL 2024 long paper, main conference.}
+}
+
+@article{natalias2026structure,
+  abbr={ACL},
+  bibtex_show={true},
+  title={Structure-Grounded Medical QA: RDF Retrieval and Claim-Level Verification for Faithful Answering},
+  author={Natalias, Stocks and Salve, Jatin Avinash and Hunter and Kunchepu and Herrera and Youm and Gilda and Dorr},
+  abstract={Structured medical question answering work combining RDF retrieval with claim-level verification for faithful generative AI outputs. Contribution: proposed claim-level verification as the core faithfulness mechanism, designed the structured retrieval pipeline, and led evaluation design.},
+  journal={ACL 2026 Workshop on Structured Understanding and Reasoning for Generative LLMs (SURGeLLM)},
+  year={2026},
+  selected={true},
+  note={Submitted}
+}
+
+@article{salve2026anisotropic,
+  abbr={UF},
+  bibtex_show={true},
+  title={Anisotropic Noise Injection for Improving Utility in Differentially Private SGD},
+  author={Salve, Jatin Avinash and Nahar and Mali},
+  abstract={Differential privacy work on shaping injected noise along gradient covariance eigenvectors to improve the utility of private SGD. Contribution: originated the core idea and led theoretical derivation and empirical evaluation.},
+  journal={University of Florida},
+  year={2026},
+  selected={false},
+  note={Under review}
 }
