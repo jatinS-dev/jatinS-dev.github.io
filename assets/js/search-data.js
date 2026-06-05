@@ -3,15 +3,15 @@ const ninja = document.querySelector('ninja-keys');
 
 // add the home and posts menu items
 ninja.data = [{
-    id: "nav-about",
-    title: "about",
+    id: "nav-home",
+    title: "home",
     section: "Navigation",
     handler: () => {
       window.location.href = "/";
     },
   },{id: "nav-projects",
           title: "projects",
-          description: "Applied ML systems across visual search, responsible AI, personalization, and multimodal reasoning.",
+          description: "Selected ML systems and research projects, with emphasis on retrieval quality, ranking, grounding, and deployment trade-offs.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/projects/";
@@ -55,12 +55,12 @@ ninja.data = [{
           description: "",
           section: "News",},{id: "projects-gestural-ai-real-time-asl-interpreter",
           title: 'Gestural AI – Real-Time ASL Interpreter',
-          description: "A real-time American Sign Language recognition system achieving 94% accuracy",
+          description: "Video-based ASL recognition with MediaPipe features, temporal models, and a real-time Streamlit demo.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
             },},{id: "projects-edi-summ-multimodal-clinical-summarization",
           title: 'EDI-Summ: Multimodal Clinical Summarization',
-          description: "State-of-the-art multimodal summarization architecture for clinical documents",
+          description: "ACL 2024 clinical summarization work combining text context with visual grounding and factual evaluation.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_project/";
             },},{id: "projects-climate-decision-support-system",
@@ -70,7 +70,7 @@ ninja.data = [{
               window.location.href = "/projects/3_project/";
             },},{id: "projects-verified-medical-nlp-rdf-grounded-jamba-rag",
           title: 'Verified Medical NLP – RDF-Grounded Jamba RAG',
-          description: "RDF-grounded medical question answering with deterministic hallucination checks and Jamba MoE reasoning",
+          description: "Medical QA pipeline that grounds generated answers in RDF triples and checks claims against retrieved evidence.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/4_project/";
             },},{id: "projects-clinical-summarization-with-prophetnet",
@@ -80,17 +80,17 @@ ninja.data = [{
               window.location.href = "/projects/5_project/";
             },},{id: "projects-icici-bank-personalization-amp-ranking-platform",
           title: 'ICICI Bank Personalization &amp;amp; Ranking Platform',
-          description: "Production ML recommendation and ranking systems serving 1M+ daily requests with measurable CTR and relevance gains",
+          description: "Production ranking and personalization workflows for banking surfaces, measured through CTR, relevance, and deployment speed.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/6_project/";
             },},{id: "projects-visual-amp-multimodal-retrieval-system",
           title: 'Visual &amp;amp; Multimodal Retrieval System',
-          description: "Vision-text retrieval with FAISS, learned reranking, Ray Serve latency optimization, and responsible AI evaluation",
+          description: "Vision-text retrieval pipeline with FAISS indexing, learned reranking, Ray Serve batching, and failure-mode evaluation.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/7_project/";
             },},{id: "projects-user-behavior-segmentation-amp-predictive-profiling",
           title: 'User Behavior Segmentation &amp;amp; Predictive Profiling',
-          description: "Behavior modeling pipeline for recommender systems using clustering, anomaly detection, sequence classification, and drift monitoring",
+          description: "Behavior modeling pipeline for recommender systems with clustering, sequence classification, and drift checks.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/8_project/";
             },},{
