@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Visual & Multimodal Retrieval System"
-description: "Vision-text retrieval with FAISS, learned reranking, Ray Serve latency optimization, and responsible AI evaluation"
+description: "Vision-text retrieval pipeline with FAISS indexing, learned reranking, Ray Serve batching, and failure-mode evaluation."
 img: assets/img/3.jpg
 importance: 0
 category: AI/ML

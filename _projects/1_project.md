@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Gestural AI – Real-Time ASL Interpreter"
-description: A real-time American Sign Language recognition system achieving 94% accuracy
+description: Video-based ASL recognition with MediaPipe features, temporal models, and a real-time Streamlit demo.
 img: assets/img/8.jpg
 importance: 5
 category: AI/ML
@@ -21,11 +21,11 @@ related_publications: false
 
 ## Overview
 
-Developed a cutting-edge real-time American Sign Language (ASL) recognition system that achieves **94% accuracy** on a dataset of 20,000+ videos and 166,000 images. This project demonstrates advanced computer vision techniques and real-time inference optimization.
+Built a real-time American Sign Language recognition system using video features, hand-tracking signals, and lightweight inference for live interaction. The best model reached **94% accuracy** across a dataset of 20,000+ videos and 166,000 images.
 
 ## Technical Implementation
 
-The system leverages multiple state-of-the-art deep learning architectures:
+The system compares several video and image modeling approaches:
 
 - **I3D (Inflated 3D ConvNet)** for temporal feature extraction from video sequences
 - **ResNet** for robust spatial feature learning
@@ -34,7 +34,7 @@ The system leverages multiple state-of-the-art deep learning architectures:
 ## Key Features
 
 - **Real-time Processing**: Optimized for low-latency inference suitable for live communication
-- **High Accuracy**: Achieved 94% recognition accuracy on diverse ASL gestures
+- **High Accuracy**: Reached 94% recognition accuracy on diverse ASL gestures
 - **Scalable Architecture**: Deployed via Docker on Linux servers for production use
 - **Multi-modal Input**: Supports both video and image input formats
 
@@ -49,7 +49,7 @@ The system leverages multiple state-of-the-art deep learning architectures:
 
 ## Impact
 
-This project has significant implications for accessibility technology, enabling real-time communication between deaf and hearing individuals. The high accuracy and real-time performance make it suitable for practical applications in education, healthcare, and daily communication.
+The project helped me think through accessibility ML as a systems problem: model accuracy matters, but so do latency, robustness to camera conditions, and the shape of the user interface around the model.
 
 ## Future Enhancements
 

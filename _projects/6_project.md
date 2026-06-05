@@ -1,7 +1,7 @@
 ---
 layout: page
 title: ICICI Bank Personalization & Ranking Platform
-description: Production ML recommendation and ranking systems serving 1M+ daily requests with measurable CTR and relevance gains
+description: Production ranking and personalization workflows for banking surfaces, measured through CTR, relevance, and deployment speed.
 img: assets/img/10.jpg
 importance: 2
 category: AI/ML
@@ -20,14 +20,14 @@ stack:
 
 ## Overview
 
-Built ML-powered personalization, recommendation, and ranking systems at **ICICI Bank** serving **1M+ daily requests**. The platform supported real-time user understanding, model experimentation, and production deployment for banking personalization workflows.
+Built personalization, recommendation, and ranking workflows at **ICICI Bank** serving **1M+ daily requests**. The work covered user understanding, ranking experiments, serving APIs, and repeatable deployment for banking personalization.
 
 ## Impact & Results
 
 - **9% CTR lift** from transformer-based ranking experiments
 - **12% improvement** in recommendation relevance over production baselines
 - **1M+ daily requests** served by production ML workflows
-- Faster model prototyping and reproducible A/B-tested deployment
+- Faster model prototyping through reproducible evaluation and A/B-tested deployment
 
 ## Technical Implementation
 
@@ -53,7 +53,7 @@ Built ML-powered personalization, recommendation, and ranking systems at **ICICI
 
 ### Platform Integration
 - **Multi-Application Support**: Unified personalization across RIB, CIB, NLI, and iMobile
-- **API Development**: RESTful services for seamless integration
+- **API Development**: RESTful services for product integration
 - **Data Pipeline**: Robust ETL processes for data processing and analysis
 - **Monitoring & Analytics**: Comprehensive dashboards for system performance
 

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "EDI-Summ: Multimodal Clinical Summarization"
-description: "State-of-the-art multimodal summarization architecture for clinical documents"
+description: "ACL 2024 clinical summarization work combining text context with visual grounding and factual evaluation."
 img: assets/img/11.jpg
 importance: 4
 category: Research
@@ -22,13 +22,13 @@ related_publications: true
 
 ## Overview
 
-Developed **EDI-Summ**, a groundbreaking multimodal summarization architecture that combines contextual and cross-attention mechanisms for clinical document summarization. This research achieved state-of-the-art performance, outperforming GPT-3.5 and GPT-4V on clinical summarization tasks.
+Worked on **EDI-Summ**, a multimodal clinical summarization architecture that combines contextual attention and visual cross-attention for clinical documents. My contributions focused on multimodal fusion experiments and evaluation.
 
 ## Research Impact
 
 - **0.81 factual recall** and **3.51 clinical score** - exceeding current benchmarks
 - **Outperformed GPT-3.5 & GPT-4V** on clinical summarization tasks
-- **Published at ACL 2024** - premier venue for computational linguistics
+- **Published at ACL 2024**
 - **Real-world applications** in healthcare documentation and medical decision support
 
 ## Technical Architecture
@@ -72,4 +72,4 @@ Conducted at the **AI-ML-NLP Lab, IIT Patna** in collaboration with leading rese
 
 ## Publication
 
-This work was published at **ACL 2024** under the title "From Sights to Insights: Towards Summarization of Multimodal Clinical Documents" and represents a significant advancement in the field of clinical NLP and multimodal learning.
+This work was published at **ACL 2024** under the title "From Sights to Insights: Towards Summarization of Multimodal Clinical Documents."

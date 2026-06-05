@@ -7,11 +7,11 @@ first_name: Jatin
 middle_name: A.
 last_name: Salve
 contact_note: >
-  Best reached by email for ML research, internship, and collaboration opportunities.
+  Best reached by email for ML research, internship, and collaboration conversations.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Portfolio of Jatin Avinash Salve, a machine learning engineer and University of Florida M.S. Computer Science student focused on computer vision, visual search, generative AI, responsible AI, and production ML systems.
 footer_text: >
-  Built with Jekyll and hosted on GitHub Pages.
+  Built with Jekyll. Last edited by hand.
 keywords: machine learning, computer vision, visual search, generative AI, responsible AI, multimodal retrieval, recommender systems, production ML # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
@@ -440,7 +440,7 @@ third_party_libraries:
     version: "5.5.0"
   google_fonts:
     url:
-      fonts: "https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&display=swap"
+      fonts: "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,500;8..60,650&family=Material+Icons&display=swap"
   highlightjs:
     integrity:
       css:

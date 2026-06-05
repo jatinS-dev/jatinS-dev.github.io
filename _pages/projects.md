@@ -2,18 +2,17 @@
 layout: page
 title: projects
 permalink: /projects/
-description: Applied ML systems across visual search, responsible AI, personalization, and multimodal reasoning.
+description: Selected ML systems and research projects, with emphasis on retrieval quality, ranking, grounding, and deployment trade-offs.
 nav: true
 nav_order: 1
 ---
 
 <section class="section-intro">
-  <p class="eyebrow">Selected systems</p>
-  <h2>Projects that connect model quality with real deployment constraints.</h2>
+  <p class="eyebrow">Selected work</p>
+  <h2>ML projects with the messy parts left in: data, latency, evaluation, and deployment.</h2>
   <p>
-    My strongest work sits at the intersection of retrieval, ranking, multimodal modeling,
-    responsible AI evaluation, and production ML infrastructure. These projects emphasize
-    measurable impact: relevance, latency, faithfulness, robustness, and user-facing outcomes.
+    These are the projects I would talk through in an interview. Each one has a concrete
+    technical problem, a measurable result, and a set of trade-offs that shaped the design.
   </p>
 </section>
 
@@ -55,10 +54,9 @@ nav_order: 1
 </div>
 
 <section class="section-intro compact">
-  <h2>Earlier research and engineering</h2>
+  <h2>Earlier work</h2>
   <p>
-    I also keep older work on clinical summarization, accessibility, climate decision support,
-    and open-source software because it shaped how I think about rigorous evaluation and practical systems.
+    Older projects stay here when they show a useful research thread, system constraint, or implementation habit.
   </p>
 </section>
 

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Verified Medical NLP – RDF-Grounded Jamba RAG"
-description: "RDF-grounded medical question answering with deterministic hallucination checks and Jamba MoE reasoning"
+description: "Medical QA pipeline that grounds generated answers in RDF triples and checks claims against retrieved evidence."
 img: assets/img/9.jpg
 importance: 3
 category: Research
@@ -19,13 +19,13 @@ stack:
 giscus_comments: true
 ---
 
-## 🩺 Overview
+## Overview
 
-This project delivers a **hallucination-mitigated medical language model pipeline** that combines RDF knowledge graphs, retrieval-augmented generation (RAG), and the **Jamba-1.5 Mixture-of-Experts** architecture. The workflow grounds every response in verifiable biomedical evidence, producing fact-checked answers for clinical question answering.
+This project combines RDF knowledge graphs, retrieval-augmented generation, and the **Jamba-1.5 Mixture-of-Experts** architecture for medical question answering. The goal is simple: make every generated answer traceable to biomedical evidence.
 
 I led design and implementation of the **evaluation and verification subsystem**, translating RDF query outputs into structured, human-readable summaries and evidence objects that drive fully auditable AI decisions.
 
-## 🚀 Key Features
+## Key Features
 
 | Component | Description |
 |-----------|-------------|
@@ -35,7 +35,7 @@ I led design and implementation of the **evaluation and verification subsystem**
 | RDF Result Summarizer | Converts `rdflib.query.Result` objects into natural summaries or structured DocSource payloads. |
 | Zero-Hallucination Pipeline | Benchmarks RDF-grounded vs. vanilla LLM outputs on PubMedQA, MedQA (USMLE), and Med-HALT datasets. |
 
-## 🧩 Core Components I Built
+## Core Components I Built
 
 ### 1. `result_to_summary()`
 
@@ -47,15 +47,15 @@ I led design and implementation of the **evaluation and verification subsystem**
 **Sample output**
 
 ```
-🩺 Found 3 result(s).
+Found 3 result(s).
 Variables: disease, treatment
 
-🔍 Showing first 3 result(s):
+Showing first 3 result(s):
   1. disease: Diabetes, treatment: Insulin
   2. disease: Hypertension, treatment: Atenolol
   3. disease: Influenza, treatment: Oseltamivir
 
-🧠 Extracted Medical Entities:
+Extracted Medical Entities:
   - Disease: Diabetes, Hypertension, Influenza
   - Drug: Atenolol, Insulin, Oseltamivir
 ```
@@ -86,7 +86,7 @@ Output:
 ]
 ```
 
-## 📊 Benchmarking
+## Benchmarking
 
 **Datasets**
 
@@ -115,7 +115,7 @@ Output:
 
 → **36–50% reduction in hallucination rate** while maintaining high factual accuracy.
 
-## 🧰 Stack
+## Stack
 
 - **Languages**: Python, SPARQL, RDFLib
 - **LLMs & Frameworks**: Jamba-1.5, LLaMA-3-8B, FAISS-powered RAG

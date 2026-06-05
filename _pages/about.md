@@ -1,8 +1,8 @@
 ---
 layout: about
-title: about
+title: home
 permalink: /
-subtitle: Machine Learning Engineer building visual search, personalization, and responsible AI systems.
+subtitle: ML engineer focused on retrieval, ranking, and evaluation systems that survive production constraints.
 
 profile:
   align: right
@@ -11,7 +11,7 @@ profile:
   more_info: >
     <p>Gainesville, FL</p>
     <p><a href="mailto:jatin.salve@ufl.edu">jatin.salve@ufl.edu</a></p>
-    <p><a href="/cv/">resume</a> · <a href="/projects/">projects</a></p>
+    <p><a href="/cv/">resume</a> · <a href="/projects/">selected work</a></p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -23,51 +23,50 @@ announcements:
 
 ---
 
-<section class="portfolio-hero">
-  <p class="eyebrow">M.S. Computer Science · University of Florida</p>
-  <h2>Production ML for search, ranking, and trustworthy multimodal AI.</h2>
+<section class="portfolio-hero" aria-labelledby="intro-heading">
+  <p class="eyebrow">University of Florida · M.S. Computer Science</p>
+  <h2 id="intro-heading">I build ML systems where retrieval quality, latency, and trust are measured together.</h2>
   <p>
-    I’m Jatin Salve, a machine learning engineer and researcher focused on computer vision,
-    visual retrieval, recommender systems, generative AI, and responsible AI evaluation. I like
-    systems where model quality, latency, reliability, and product impact are measured together.
+    I’m Jatin Salve. My work sits around visual search, recommendation systems, multimodal retrieval,
+    and responsible AI evaluation. I’m most interested in the point where a model stops being a demo
+    and becomes something people can measure, debug, and rely on.
   </p>
-  <div class="portfolio-actions">
-    <a class="portfolio-button primary" href="/projects/">View projects</a>
-    <a class="portfolio-button" href="/cv/">Download resume</a>
-    <a class="portfolio-button" href="mailto:jatin.salve@ufl.edu">Contact</a>
+  <div class="portfolio-actions" aria-label="Primary links">
+    <a class="portfolio-button primary" href="/projects/">Selected work</a>
+    <a class="portfolio-button" href="/cv/">Resume</a>
+    <a class="portfolio-button" href="mailto:jatin.salve@ufl.edu">Email me</a>
   </div>
 </section>
 
-<section class="metric-strip" aria-label="Selected impact metrics">
-  <div>
-    <strong>1M+</strong>
-    <span>daily production ML requests</span>
-  </div>
-  <div>
-    <strong>21%</strong>
-    <span>NDCG@10 lift in multimodal retrieval</span>
-  </div>
-  <div>
-    <strong>9%</strong>
-    <span>CTR lift from ranking improvements</span>
-  </div>
-  <div>
-    <strong>ACL</strong>
-    <span>2024 publication, 2026 submission</span>
-  </div>
+<section class="proof-list" aria-label="Selected proof points">
+  <article>
+    <span>Production ranking</span>
+    <p>Shipped personalization and recommendation workflows at ICICI Bank serving 1M+ daily requests.</p>
+  </article>
+  <article>
+    <span>Retrieval evaluation</span>
+    <p>Improved multimodal retrieval NDCG@10 by 21% with dense embeddings, FAISS search, and reranking.</p>
+  </article>
+  <article>
+    <span>Responsible AI</span>
+    <p>Built claim-level verification and grounding checks for medical QA and generative AI systems.</p>
+  </article>
 </section>
 
-### What I Build
-- **Visual search & multimodal retrieval:** dense embeddings, FAISS / ANN indexing, learned reranking, evaluation pipelines.
-- **Recommendation & personalization systems:** user understanding, segmentation, sequence modeling, A/B-tested production deployment.
-- **Responsible generative AI:** RAG, claim-level verification, faithfulness checks, safety evaluation, hallucination reduction.
-- **ML infrastructure:** Ray Serve, FastAPI, Docker, Kubernetes, AWS ECS/S3/Lambda, GPU batching, CI/CD.
+<section class="work-notes">
+  <h2>What I’m working on</h2>
+  <ul>
+    <li><strong>Visual and multimodal retrieval:</strong> embedding pipelines, ANN indexing, reranking, and retrieval diagnostics.</li>
+    <li><strong>Recommendation systems:</strong> user understanding, segmentation, ranking experiments, and A/B-tested deployment.</li>
+    <li><strong>Faithful generation:</strong> RAG, RDF grounding, claim verification, and evaluation harnesses for hallucination reduction.</li>
+    <li><strong>ML serving:</strong> Ray Serve, FastAPI, Docker, AWS ECS, batching, CI/CD, and latency measurement.</li>
+  </ul>
+</section>
 
-### Selected Work
-- Built multimodal retrieval pipelines combining visual and textual signals, improving **NDCG@10 by 21%** with dense transformer embeddings and reranking.
-- Shipped recommendation and ranking systems at **ICICI Bank** serving **1M+ daily requests**, delivering a **9% CTR lift** and **12% relevance improvement**.
-- Developed responsible AI evaluation harnesses for context grounding, faithfulness, safety, and claim-level verification.
-- Published multimodal clinical summarization work at **ACL 2024**, with structured medical QA work submitted to an **ACL 2026** workshop.
-
-### Availability
-Available **September 21 - December 11, 2026** for full-time ML internship work in San Francisco, Palo Alto, Seattle, New York, or remote.
+<section class="availability-note">
+  <h2>Availability</h2>
+  <p>
+    I’m looking for full-time ML internship work from <strong>September 21 to December 11, 2026</strong>,
+    especially in visual search, recommender systems, multimodal retrieval, or responsible AI.
+  </p>
+</section>

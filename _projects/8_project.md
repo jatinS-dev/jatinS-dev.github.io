@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "User Behavior Segmentation & Predictive Profiling"
-description: "Behavior modeling pipeline for recommender systems using clustering, anomaly detection, sequence classification, and drift monitoring"
+description: "Behavior modeling pipeline for recommender systems with clustering, sequence classification, and drift checks."
 img: assets/img/12.jpg
 importance: 1
 category: AI/ML

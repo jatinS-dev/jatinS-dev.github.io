@@ -65,7 +65,7 @@ Developed a comprehensive **real-time decision support system** during my **MITA
 
 ## Research Environment
 
-Conducted at **Polytechnique de Montréal** as part of the prestigious **MITACS Globalink Research Internship** program. The project involved collaboration with leading researchers in environmental engineering and climate science, working in state-of-the-art research facilities.
+Conducted at **Polytechnique de Montréal** through the **MITACS Globalink Research Internship** program. The project involved collaboration with environmental engineering and climate science researchers.
 
 ## Impact & Applications
 

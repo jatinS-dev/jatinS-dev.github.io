@@ -89,8 +89,8 @@ Developed an advanced **clinical dialogue summarization system** by fine-tuning 
 - **Multi-modal Integration**: Incorporation of visual medical data
 - **Real-time Processing**: Live summarization during clinical consultations
 - **Specialty Adaptation**: Domain-specific models for different medical specialties
-- **Integration**: EHR system integration for seamless clinical workflows
+- **Integration**: EHR system integration for clinical workflows
 
 ## Research Environment
 
-Conducted in collaboration with clinical NLP researchers, utilizing state-of-the-art computing infrastructure. The project involved extensive experimentation with different model architectures and training strategies, contributing to the broader field of clinical natural language processing.
+Conducted in collaboration with clinical NLP researchers using GPU-backed computing infrastructure. The project involved experimentation with model architectures and training strategies for clinical natural language processing.
