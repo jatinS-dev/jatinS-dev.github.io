@@ -11,7 +11,7 @@ ninja.data = [{
     },
   },{id: "nav-projects",
           title: "projects",
-          description: "Selected ML systems and research projects, with emphasis on retrieval quality, ranking, grounding, and deployment trade-offs.",
+          description: "AI systems work spanning LLM inference, GPU profiling, clinical evaluation, and production ML.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/projects/";
@@ -37,9 +37,9 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/blog/";
           },
-        },{id: "nav-resume",
-          title: "resume",
-          description: "Resume and selected experience in machine learning, visual search, responsible AI, and production ML systems.",
+        },{id: "nav-résumé",
+          title: "résumé",
+          description: "Resume and selected experience in LLM inference, GPU performance, distributed experimentation, and production ML systems.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/cv/";
@@ -53,46 +53,46 @@ ninja.data = [{
           section: "News",},{id: "news-submitted-structured-medical-qa-work-to-the-acl-2026-surgellm-workshop-focusing-on-rdf-retrieval-claim-level-verification-and-faithful-generative-ai-evaluation",
           title: 'Submitted structured medical QA work to the ACL 2026 SURGeLLM workshop, focusing on...',
           description: "",
-          section: "News",},{id: "projects-gestural-ai-real-time-asl-interpreter",
-          title: 'Gestural AI – Real-Time ASL Interpreter',
-          description: "Video-based ASL recognition with MediaPipe features, temporal models, and a real-time Streamlit demo.",
+          section: "News",},{id: "projects-verifiable-preference-optimization-for-reasoning-llms",
+          title: 'Verifiable Preference Optimization for Reasoning LLMs',
+          description: "A verified reasoning-data pipeline and LoRA DPO study with careful validation of truncation and answer parsing.",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/1_project/";
+              window.location.href = "/projects/10_project/";
+            },},{id: "projects-temporal-knowledge-graph-memory",
+          title: 'Temporal Knowledge-Graph Memory',
+          description: "Graphiti and Neo4j memory for clinical LLM agents, evaluated with a six-stage verification pipeline.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/11_project/";
+            },},{id: "projects-joomla-4-guided-tour",
+          title: 'Joomla 4 Guided Tour',
+          description: "An MVC component and plugin shipped into Joomla 4 core through Google Summer of Code.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/12_project/";
+            },},{id: "projects-unifyai-ivy-numerical-core",
+          title: 'UnifyAI / Ivy Numerical Core',
+          description: "Cross-backend numerical primitives for PaddlePaddle and PyTorch, including a BLAS/LAPACK-backed dot implementation.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/13_project/";
             },},{id: "projects-edi-summ-multimodal-clinical-summarization",
           title: 'EDI-Summ: Multimodal Clinical Summarization',
-          description: "ACL 2024 clinical summarization work combining text context with visual grounding and factual evaluation.",
+          description: "Image-guided BART with decoder cross-attention for multimodal clinical document summarization.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_project/";
-            },},{id: "projects-climate-decision-support-system",
-          title: 'Climate Decision Support System',
-          description: "Real-time data analysis platform for climate and water management across 30 cities",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/3_project/";
-            },},{id: "projects-verified-medical-nlp-rdf-grounded-jamba-rag",
-          title: 'Verified Medical NLP – RDF-Grounded Jamba RAG',
-          description: "Medical QA pipeline that grounds generated answers in RDF triples and checks claims against retrieved evidence.",
+            },},{id: "projects-structure-grounded-medical-qa",
+          title: 'Structure-Grounded Medical QA',
+          description: "RDF and SPARQL retrieval with claim-level verification for faithful medical question answering.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/4_project/";
-            },},{id: "projects-clinical-summarization-with-prophetnet",
-          title: 'Clinical Summarization with ProphetNet',
-          description: "Fine-tuning ProphetNet for improved clinical dialogue summarization",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/5_project/";
             },},{id: "projects-icici-bank-personalization-amp-ranking-platform",
           title: 'ICICI Bank Personalization &amp;amp; Ranking Platform',
           description: "Production ranking and personalization workflows for banking surfaces, measured through CTR, relevance, and deployment speed.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/6_project/";
-            },},{id: "projects-visual-amp-multimodal-retrieval-system",
-          title: 'Visual &amp;amp; Multimodal Retrieval System',
-          description: "Vision-text retrieval pipeline with FAISS indexing, learned reranking, Ray Serve batching, and failure-mode evaluation.",
+            },},{id: "projects-latency-aware-speculative-decoding",
+          title: 'Latency-Aware Speculative Decoding',
+          description: "A correct speculative decoding engine, benchmark harness, and GPU profiling study for Qwen language models.",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/7_project/";
-            },},{id: "projects-user-behavior-segmentation-amp-predictive-profiling",
-          title: 'User Behavior Segmentation &amp;amp; Predictive Profiling',
-          description: "Behavior modeling pipeline for recommender systems with clustering, sequence classification, and drift checks.",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/8_project/";
+              window.location.href = "/projects/9_project/";
             },},{
         id: 'social-email',
         title: 'email',
