@@ -3,6 +3,323 @@
  ******************************************************************************/
 
 body.jia-home {
+  -webkit-text-size-adjust: none;
+  background: #090909 !important;
+  padding: 0 !important;
+  text-size-adjust: none;
+}
+
+.minimal-home {
+  --paper: #f1eee7;
+  --ink: #10100f;
+  --muted: #77736b;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "EB Garamond", Georgia, serif;
+  overflow-x: hidden;
+
+  a { color: inherit; }
+  a:visited { color: inherit; }
+  p, h1, h2, h3, div, span { color: inherit; }
+}
+
+.minimal-hero {
+  background:
+    linear-gradient(180deg, rgba(5, 8, 7, 0.24) 0%, rgba(5, 8, 7, 0.16) 45%, rgba(5, 8, 7, 0.72) 100%),
+    url("/assets/img/1.jpg") center 46% / cover no-repeat;
+  color: #fff;
+  min-height: min(88vh, 58rem);
+  overflow: hidden;
+  position: relative;
+}
+
+.minimal-brand,
+.minimal-nav {
+  position: absolute;
+  top: clamp(1.5rem, 3vw, 2.5rem);
+  z-index: 2;
+}
+
+.minimal-brand {
+  font-size: 1.02rem;
+  left: clamp(1.5rem, 5vw, 5rem);
+  text-decoration: none;
+  text-shadow: 0 2px 18px rgba(0, 0, 0, 0.42);
+}
+
+.minimal-nav {
+  display: flex;
+  font-size: 0.93rem;
+  gap: clamp(1rem, 2.5vw, 2rem);
+  right: clamp(1.5rem, 5vw, 5rem);
+
+  a {
+    text-decoration: none;
+    text-shadow: 0 2px 18px rgba(0, 0, 0, 0.42);
+    transition: opacity 160ms ease;
+    &:hover { opacity: 0.66; text-decoration: none; }
+  }
+}
+
+.hero-copy {
+  bottom: clamp(3rem, 9vh, 7rem);
+  container-type: inline-size;
+  left: clamp(1.5rem, 8vw, 8rem);
+  max-width: 52rem;
+  position: absolute;
+  right: 1.5rem;
+
+  > p {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.68rem;
+    letter-spacing: 0.07em;
+    margin-bottom: 1.25rem;
+    text-transform: uppercase;
+  }
+
+  h1 {
+    color: #fff;
+    font-family: "EB Garamond", Georgia, serif;
+    font-size: clamp(42px, 9cqw, 109px) !important;
+    font-weight: 400;
+    letter-spacing: -0.055em;
+    line-height: 0.91;
+    margin: 0;
+    max-width: 9em;
+    text-wrap: balance;
+  }
+}
+
+.hero-cta {
+  align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.55);
+  display: inline-flex;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.68rem;
+  gap: 2rem;
+  margin-top: 2.4rem;
+  padding-bottom: 0.35rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  &:hover { color: #fff; gap: 2.35rem; text-decoration: none; }
+  span { transition: transform 160ms ease; }
+}
+
+.minimal-about,
+.minimal-work,
+.minimal-contact {
+  margin: 0 auto;
+  max-width: 76rem;
+  padding-left: clamp(1.5rem, 6vw, 5rem);
+  padding-right: clamp(1.5rem, 6vw, 5rem);
+}
+
+.minimal-about {
+  align-items: start;
+  display: grid;
+  gap: clamp(2.5rem, 8vw, 8rem);
+  grid-template-columns: minmax(12rem, 0.62fr) minmax(0, 1.4fr);
+  padding-bottom: clamp(6rem, 11vw, 10rem);
+  padding-top: clamp(6rem, 11vw, 10rem);
+}
+
+.about-portrait {
+  img {
+    aspect-ratio: 4 / 5;
+    filter: grayscale(100%) contrast(1.05);
+    object-fit: cover;
+    width: 100%;
+  }
+  p {
+    color: var(--muted);
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.63rem;
+    line-height: 1.55;
+    margin-top: 0.75rem;
+    text-transform: uppercase;
+  }
+}
+
+.section-kicker {
+  color: var(--muted) !important;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.64rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.about-copy {
+  h2 {
+    font-family: "EB Garamond", Georgia, serif;
+    font-size: clamp(2.25rem, 4.8vw, 4.7rem);
+    font-weight: 400;
+    letter-spacing: -0.045em;
+    line-height: 0.98;
+    margin: 2rem 0 2.4rem;
+    max-width: 12em;
+  }
+  > p:not(.section-kicker) {
+    color: #3e3c37;
+    font-size: clamp(1.03rem, 1.6vw, 1.25rem);
+    line-height: 1.55;
+    max-width: 38rem;
+  }
+}
+
+.about-links {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.68rem;
+  gap: 1.4rem;
+  margin-top: 2.2rem;
+  text-transform: uppercase;
+  a { text-underline-offset: 0.25em; }
+}
+
+.minimal-work {
+  border-top: 1px solid rgba(16, 16, 15, 0.18);
+  padding-bottom: clamp(6rem, 12vw, 11rem);
+  padding-top: clamp(5rem, 9vw, 8rem);
+}
+
+.work-heading {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 12rem 1fr;
+  margin-bottom: clamp(3rem, 7vw, 6rem);
+
+  h2 {
+    font-family: "EB Garamond", Georgia, serif;
+    font-size: clamp(2.4rem, 5vw, 5rem);
+    font-weight: 400;
+    letter-spacing: -0.045em;
+    line-height: 0.95;
+    margin: 0;
+  }
+}
+
+.minimal-project {
+  align-items: center;
+  border-top: 1px solid rgba(16, 16, 15, 0.18);
+  display: grid;
+  gap: 1.4rem;
+  grid-template-columns: 2.5rem minmax(0, 1fr) 11rem 1.5rem;
+  padding: 1.8rem 0;
+  text-decoration: none;
+  transition: padding 180ms ease;
+
+  &:last-of-type { border-bottom: 1px solid rgba(16, 16, 15, 0.18); }
+  &:hover { color: var(--ink); padding-left: 0.6rem; text-decoration: none; }
+
+  h3 {
+    font-family: "EB Garamond", Georgia, serif;
+    font-size: clamp(1.45rem, 2.5vw, 2.2rem);
+    font-weight: 400;
+    letter-spacing: -0.025em;
+    margin: 0 0 0.25rem;
+  }
+  > div p { color: var(--muted); font-size: 0.91rem; margin: 0; }
+}
+
+.project-index,
+.project-metric,
+.project-arrow {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.62rem;
+}
+
+.project-index { color: var(--muted) !important; }
+.project-metric { color: #525048 !important; line-height: 1.5; margin: 0; }
+.project-arrow { font-size: 0.85rem; text-align: right; }
+
+.all-work-link {
+  display: inline-block;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.68rem;
+  margin-top: 2rem;
+  text-transform: uppercase;
+  text-underline-offset: 0.3em;
+}
+
+.minimal-contact {
+  border-top: 1px solid rgba(241, 238, 231, 0.2);
+  color: #f1eee7;
+  max-width: none;
+  padding-bottom: 2rem;
+  padding-top: clamp(5rem, 10vw, 9rem);
+  position: relative;
+
+  &::before {
+    background: #0b0b0a;
+    content: "";
+    inset: 0 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    position: absolute;
+    z-index: -1;
+  }
+
+  h2 {
+    color: #f1eee7;
+    font-family: "EB Garamond", Georgia, serif;
+    font-size: clamp(2.7rem, 6vw, 6rem);
+    font-weight: 400;
+    letter-spacing: -0.05em;
+    line-height: 0.92;
+    margin: 2rem 0 3rem;
+    max-width: 10em;
+  }
+}
+
+.contact-cta {
+  align-items: center;
+  border: 1px solid rgba(241, 238, 231, 0.45);
+  border-radius: 999px;
+  display: inline-flex;
+  font-size: 1.05rem;
+  gap: 4rem;
+  padding: 0.8rem 1.1rem 0.8rem 1.4rem;
+  text-decoration: none;
+  transition: background 160ms ease, color 160ms ease;
+  &:hover { background: #f1eee7; color: #0b0b0a; text-decoration: none; }
+}
+
+.footer-note {
+  color: rgba(241, 238, 231, 0.52) !important;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.59rem;
+  margin: clamp(5rem, 10vw, 9rem) 0 0;
+  text-transform: uppercase;
+}
+
+@media (max-width: 700px) {
+  .minimal-hero {
+    background-position: 46% center;
+    height: 100svh !important;
+    min-height: 100svh !important;
+  }
+  .minimal-brand,
+  .minimal-nav { top: 1.3rem; }
+  .minimal-brand { font-size: 0.86rem; }
+  .minimal-nav { font-size: 0.78rem; gap: 0.75rem; }
+  .hero-copy { bottom: 2.5rem; left: 1.5rem; }
+  .hero-copy > p { font-size: 0.57rem; margin-bottom: 0.9rem; }
+  .hero-copy h1 {
+    font-size: 42px !important;
+    line-height: 0.94 !important;
+    max-width: 8.5em !important;
+  }
+  .hero-cta { margin-top: 1.6rem; }
+  .minimal-about { grid-template-columns: 1fr; }
+  .about-portrait { max-width: 13rem; }
+  .work-heading { grid-template-columns: 1fr; }
+  .minimal-project { align-items: start; grid-template-columns: 1.8rem 1fr 1rem; }
+  .minimal-project .project-metric { grid-column: 2 / 4; }
+  .minimal-project .project-arrow { grid-column: 3; grid-row: 1; }
+}
+
+body.jia-home {
   background: #000 !important;
   color: #fff;
   font-family: "EB Garamond", Georgia, serif;
