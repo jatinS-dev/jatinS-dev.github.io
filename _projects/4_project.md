@@ -1,124 +1,43 @@
 ---
-layout: page
-title: "Verified Medical NLP – RDF-Grounded Jamba RAG"
-description: "Medical QA pipeline that grounds generated answers in RDF triples and checks claims against retrieved evidence."
+layout: project-jia
+title: "Structure-Grounded Medical QA"
+description: "RDF and SPARQL retrieval with claim-level verification for faithful medical question answering."
 img: assets/img/9.jpg
-importance: 3
+importance: 2
 category: Research
 featured: true
-year: 2025 - Present
+portfolio_featured: true
+year: 2026
 metrics:
-  - "14% lower hallucination rate"
+  - "ACL 2026 submission"
   - "Claim-level verification"
-  - "Auditable RDF grounding"
+  - "RDF + SPARQL grounding"
 stack:
+  - Python
   - RDFLib
   - SPARQL
   - RAG
-  - Jamba
-giscus_comments: true
 ---
 
 ## Overview
 
-This project combines RDF knowledge graphs, retrieval-augmented generation, and the **Jamba-1.5 Mixture-of-Experts** architecture for medical question answering. The goal is simple: make every generated answer traceable to biomedical evidence.
+Built a medical question-answering pipeline that retrieves structured evidence from RDF graphs and verifies generated claims against that evidence. I am second author on the associated ACL 2026 SURGeLLM workshop submission.
 
-I led design and implementation of the **evaluation and verification subsystem**, translating RDF query outputs into structured, human-readable summaries and evidence objects that drive fully auditable AI decisions.
+## System path
 
-## Key Features
+`question → entity resolution → SPARQL retrieval → evidence assembly → answer generation → claim verification`
 
-| Component | Description |
-|-----------|-------------|
-| RDF-Grounded RAG | Retrieves factual triples (disease–treatment–drug, etc.) from Bio2RDF, UMLS, and Wikidata Medical before generation. |
-| Jamba Integration | Leverages Jamba-1.5 MoE for efficient long-context reasoning that blends retrieved biomedical evidence with prompt context. |
-| Hallucination Evaluation Module | Implements deterministic checkers for factual consistency, retrieval coverage, and hallucination rate (H). |
-| RDF Result Summarizer | Converts `rdflib.query.Result` objects into natural summaries or structured DocSource payloads. |
-| Zero-Hallucination Pipeline | Benchmarks RDF-grounded vs. vanilla LLM outputs on PubMedQA, MedQA (USMLE), and Med-HALT datasets. |
+## What I built
 
-## Core Components I Built
+- Structured retrieval over medical RDF data using SPARQL.
+- Deterministic conversion of query results into evidence objects with provenance.
+- Claim-level checks that separate supported, unsupported, and conflicting statements.
+- Evaluation plumbing for comparing answer faithfulness against retrieved evidence.
 
-### 1. `result_to_summary()`
+## Why structure matters
 
-- Handles all SPARQL query forms (SELECT, ASK, CONSTRUCT, DESCRIBE).
-- Produces concise, human-readable narratives summarizing RDF answers.
-- Automatically infers medical entities (disease, drug, gene, symptom) from triples.
-- Fully deterministic — no downstream ML/LLM inference required.
+Text retrieval can return semantically related passages without making relationships explicit. RDF triples preserve entities and relations, allowing each generated claim to be checked against a concrete evidence path.
 
-**Sample output**
+## Research status
 
-```
-Found 3 result(s).
-Variables: disease, treatment
-
-Showing first 3 result(s):
-  1. disease: Diabetes, treatment: Insulin
-  2. disease: Hypertension, treatment: Atenolol
-  3. disease: Influenza, treatment: Oseltamivir
-
-Extracted Medical Entities:
-  - Disease: Diabetes, Hypertension, Influenza
-  - Drug: Atenolol, Insulin, Oseltamivir
-```
-
-### 2. `result_to_sources()`
-
-- Transforms RDF query results into `DocSource` objects for provenance tracking.
-- Supports SELECT, ASK, CONSTRUCT, and DESCRIBE outputs with schema-specific adapters.
-
-**Example**
-
-Input rows:
-
-| uri | label | abstract |
-|-----|-------|----------|
-| http://bio2rdf.org/drugbank:DB001 | Aspirin | Used to treat pain and fever. |
-
-Output:
-
-```python
-[
-  DocSource(
-      id="drugbank:DB001",
-      title="Aspirin",
-      content="Used to treat pain and fever.",
-      source_type="SPARQL_SELECT"
-  )
-]
-```
-
-## Benchmarking
-
-**Datasets**
-
-- PubMedQA (labeled biomedical QA)
-- MedQA (USMLE clinical reasoning)
-- Med-HALT (hallucination stress test)
-
-**Metrics**
-
-| Metric | Purpose |
-|--------|---------|
-| Hallucination Rate (H) | Share of unsupported or contradictory statements |
-| Factual Precision / Recall | Alignment of claims with RDF ground truth |
-| ROUGE-L / F1 | Overlap with reference clinical answers |
-| Retrieval Precision@k | Accuracy of top-k triple retrieval |
-| Latency | Response time per query |
-
-**Results**
-
-| Model | RDF Grounding | Hallucination ↓ | F1 ↑ | Latency (s) ↓ |
-|-------|---------------|-----------------|------|---------------|
-| LLaMA-3-8B-Instruct | ✗ | 0.45 | 0.61 | 1.2 |
-| RAG-Text | ✗ | 0.36 | 0.68 | 2.3 |
-| RDF-RAG | ✓ | 0.28 | 0.75 | 2.9 |
-| Jamba + RDF | ✓ | **0.22** | **0.79** | 3.1 |
-
-→ **36–50% reduction in hallucination rate** while maintaining high factual accuracy.
-
-## Stack
-
-- **Languages**: Python, SPARQL, RDFLib
-- **LLMs & Frameworks**: Jamba-1.5, LLaMA-3-8B, FAISS-powered RAG
-- **Libraries**: `rdflib`, `datasets`, `jsonlines`, `pandas`, `matplotlib`
-- **Datasets**: PubMedQA, MedQA, Med-HALT
-- **Infrastructure**: UF HiPerGator HPC (CUDA 12.1, Apptainer containers)
+Submitted to the ACL 2026 SURGeLLM Workshop as **“Structure-Grounded Medical QA: RDF Retrieval and Claim-Level Verification for Faithful Answering.”**

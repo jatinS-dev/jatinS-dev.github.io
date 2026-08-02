@@ -1,9 +1,10 @@
 ---
-layout: page
+layout: project-jia
+published: false
 title: "User Behavior Segmentation & Predictive Profiling"
 description: "Behavior modeling pipeline for recommender systems with clustering, sequence classification, and drift checks."
 img: assets/img/12.jpg
-importance: 1
+importance: 9
 category: AI/ML
 featured: true
 year: 2026 - Present

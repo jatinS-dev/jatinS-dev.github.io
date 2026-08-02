@@ -1,5 +1,6 @@
 ---
-layout: page
+layout: project-jia
+published: false
 title: "Clinical Summarization with ProphetNet"
 description: Fine-tuning ProphetNet for improved clinical dialogue summarization
 img: assets/img/5.jpg

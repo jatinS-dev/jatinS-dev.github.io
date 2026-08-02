@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="{{ site.lang }}">
+  <head>
+    {% include head.liquid %}
+  </head>
+  <body class="jia-home">
+    <main class="jia-copy project-page">
+      <header class="resume-nav">
+        <a class="resume-brand" href="/"><span>↗</span> jatin salve</a>
+        <nav aria-label="Project navigation">
+          <a href="/#about">about</a>
+          <a class="active" href="/#work">work</a>
+          <a href="/cv/">résumé</a>
+        </nav>
+      </header>
+
+      <article class="project-sheet">
+        <header class="project-intro">
+          <p>{{ page.category | downcase }} / {{ page.year }}</p>
+          <h1>{{ page.title | downcase }}</h1>
+          {% if page.description %}<p class="project-deck">{{ page.description }}</p>{% endif %}
+
+          {% if page.metrics %}
+            <div class="project-stats">
+              {% for metric in page.metrics %}<span>{{ metric }}</span>{% endfor %}
+            </div>
+          {% endif %}
+
+          {% if page.stack %}
+            <p class="project-stack">{{ page.stack | join: ' · ' }}</p>
+          {% endif %}
+          {% if page.links %}
+            <div class="project-links">
+              {% for link in page.links %}<a href="{{ link.url }}">{{ link.label }} ↗</a>{% endfor %}
+            </div>
+          {% endif %}
+        </header>
+
+        <div class="project-body">
+          {{ content }}
+        </div>
+
+        <footer class="resume-footer project-footer">
+          <a href="/#work">← selected work</a>
+          <a href="mailto:jatin.salve@ufl.edu">let’s talk ↗</a>
+        </footer>
+      </article>
+    </main>
+    <script src="{{ '/assets/js/portfolio-interactions.js' | relative_url }}" defer></script>
+    {% include scripts.liquid %}
+  </body>
+</html>

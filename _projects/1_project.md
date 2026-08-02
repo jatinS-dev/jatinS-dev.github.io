@@ -1,9 +1,10 @@
 ---
-layout: page
+layout: project-jia
+published: false
 title: "Gestural AI – Real-Time ASL Interpreter"
 description: Video-based ASL recognition with MediaPipe features, temporal models, and a real-time Streamlit demo.
 img: assets/img/8.jpg
-importance: 5
+importance: 6
 category: AI/ML
 featured: true
 year: 2024

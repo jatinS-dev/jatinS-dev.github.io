@@ -9,10 +9,10 @@ last_name: Salve
 contact_note: >
   Best reached by email for ML research, internship, and collaboration conversations.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Portfolio of Jatin Avinash Salve, a machine learning engineer and University of Florida M.S. Computer Science student focused on computer vision, visual search, generative AI, responsible AI, and production ML systems.
+  Portfolio of Jatin Avinash Salve, an AI systems performance engineer and University of Florida M.S. Computer Science student focused on LLM inference, GPU profiling, speculative decoding, and production ML systems.
 footer_text: >
   Built with Jekyll. Last edited by hand.
-keywords: machine learning, computer vision, visual search, generative AI, responsible AI, multimodal retrieval, recommender systems, production ML # add your own keywords or leave empty
+keywords: AI systems, LLM inference, GPU profiling, speculative decoding, KV cache, PyTorch, CUDA, production ML # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
@@ -85,7 +85,7 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # -----------------------------------------------------------------------------
 
 blog_name: Jatin Salve
-blog_description: Notes on machine learning systems, multimodal AI, and responsible deployment.
+blog_description: Notes on LLM inference, GPU performance, distributed ML systems, and reliable evaluation.
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts
 
@@ -440,7 +440,7 @@ third_party_libraries:
     version: "5.5.0"
   google_fonts:
     url:
-      fonts: "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,500;8..60,650&family=Material+Icons&display=swap"
+      fonts: "https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&family=IBM+Plex+Mono:wght@400&family=IBM+Plex+Sans:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,500;8..60,650&family=Material+Icons&display=swap"
   highlightjs:
     integrity:
       css:
