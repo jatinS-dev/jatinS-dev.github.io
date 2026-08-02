@@ -1,9 +1,9 @@
 ---
-layout: page
+layout: project-jia
 title: ICICI Bank Personalization & Ranking Platform
 description: Production ranking and personalization workflows for banking surfaces, measured through CTR, relevance, and deployment speed.
 img: assets/img/10.jpg
-importance: 2
+importance: 3
 category: AI/ML
 featured: true
 year: 2023 - 2025

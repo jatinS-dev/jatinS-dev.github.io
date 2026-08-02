@@ -1,9 +1,10 @@
 ---
-layout: page
+layout: project-jia
+published: false
 title: "Visual & Multimodal Retrieval System"
 description: "Vision-text retrieval pipeline with FAISS indexing, learned reranking, Ray Serve batching, and failure-mode evaluation."
 img: assets/img/3.jpg
-importance: 0
+importance: 8
 category: AI/ML
 featured: true
 year: 2025 - Present

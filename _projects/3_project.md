@@ -1,5 +1,6 @@
 ---
-layout: page
+layout: project-jia
+published: false
 title: Climate Decision Support System
 description: Real-time data analysis platform for climate and water management across 30 cities
 img: assets/img/6.jpg

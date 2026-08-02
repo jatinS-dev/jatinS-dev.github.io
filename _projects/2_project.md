@@ -1,75 +1,50 @@
 ---
-layout: page
+layout: project-jia
 title: "EDI-Summ: Multimodal Clinical Summarization"
-description: "ACL 2024 clinical summarization work combining text context with visual grounding and factual evaluation."
+description: "Image-guided BART with decoder cross-attention for multimodal clinical document summarization."
 img: assets/img/11.jpg
 importance: 4
 category: Research
 featured: true
+portfolio_featured: true
 year: 2024
 metrics:
   - "ACL 2024 long paper"
-  - "0.81 factual recall"
-  - "Vision cross-attention"
+  - "3 clinical benchmarks"
+  - "Beat GPT-4V"
 stack:
   - PyTorch
-  - NLP
+  - BART
   - Multimodal AI
   - Evaluation
-giscus_comments: true
-related_publications: true
+links:
+  - label: ACL Anthology
+    url: https://aclanthology.org/2024.acl-long.708/
+  - label: Paper PDF
+    url: https://aclanthology.org/2024.acl-long.708.pdf
 ---
 
 ## Overview
 
-Worked on **EDI-Summ**, a multimodal clinical summarization architecture that combines contextual attention and visual cross-attention for clinical documents. My contributions focused on multimodal fusion experiments and evaluation.
+Co-authored **EDI-Summ**, an image-guided encoder-decoder model for multimodal clinical document summarization. The work was published as a long paper at ACL 2024.
 
-## Research Impact
+## My contribution
 
-- **0.81 factual recall** and **3.51 clinical score** - exceeding current benchmarks
-- **Outperformed GPT-3.5 & GPT-4V** on clinical summarization tasks
-- **Published at ACL 2024**
-- **Real-world applications** in healthcare documentation and medical decision support
+- Implemented image cross-attention in BART’s decoder.
+- Profiled ResNet, VGG, and ViT image encoders and multimodal fusion choices.
+- Ran ablations and failure analysis across three clinical benchmarks.
+- Contributed to evaluation using ROUGE, BLEU, METEOR, statistical analysis, and expert review.
 
-## Technical Architecture
+## Architecture
 
-The EDI-Summ system integrates multiple advanced components:
+`clinical text → modality-aware encoder → BART decoder + image cross-attention → grounded summary`
 
-### Multimodal Fusion
-- **Contextual Attention**: Captures temporal dependencies in clinical dialogues
-- **Cross-Attention**: Enables interaction between visual and textual modalities
-- **BART Pipeline Enhancement**: Improved with multimodal fusion capabilities
+## Result
 
-### Performance Optimization
-- **GPU-based Training**: Optimized for Linux cluster environments
-- **Distributed Processing**: Scalable architecture for large-scale clinical datasets
-- **Real-time Inference**: Efficient deployment for clinical workflows
-
-## Key Innovations
-
-1. **Multimodal Integration**: First system to effectively combine visual and textual clinical information
-2. **Clinical-Specific Metrics**: Developed evaluation metrics tailored for medical accuracy
-3. **Scalable Architecture**: Designed for production deployment in healthcare systems
-
-## Technologies & Tools
-
-- **Python** for core implementation
-- **PyTorch** for deep learning framework
-- **NLP Libraries** for text processing and analysis
-- **Linux Clusters** for distributed training and experimentation
-- **Clinical Datasets** including MeSum for evaluation
-
-## Research Environment
-
-Conducted at the **AI-ML-NLP Lab, IIT Patna** in collaboration with leading researchers in clinical NLP. The work involved extensive experimentation in Linux-based distributed research environments, ensuring reproducibility and scalability.
-
-## Future Directions
-
-- Integration with Electronic Health Records (EHR) systems
-- Real-time clinical decision support applications
-- Extension to other medical domains and languages
-- Development of clinical-specific evaluation benchmarks
+EDI-Summ outperformed BART, GPT-4V, and multimodal baselines across the three evaluated benchmarks. The important result was not only higher aggregate scores, but evidence that decoder-side image grounding contributed useful clinical information.
 
 ## Publication
 
-This work was published at **ACL 2024** under the title "From Sights to Insights: Towards Summarization of Multimodal Clinical Documents."
+**From Sights to Insights: Towards Summarization of Multimodal Clinical Documents**
+
+Proceedings of ACL 2024, Volume 1: Long Papers, pages 13117–13129.
